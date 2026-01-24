@@ -153,7 +153,15 @@ export async function updateHeaderVideo(videoPath: string): Promise<void> {
 
 export function extractYouTubeId(url: string): string | null {
   const patterns = [
-    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/|youtube\.com\/shorts\/)([^&\n?#]+)/,
+    // Standard YouTube URLs (with or without www, http/https)
+    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([^&\n?#]+)/,
+    // Short URLs
+    /(?:https?:\/\/)?(?:www\.)?youtu\.be\/([^&\n?#]+)/,
+    // Embed URLs
+    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/embed\/([^&\n?#]+)/,
+    // Shorts URLs
+    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/shorts\/([^&\n?#]+)/,
+    // Just the video ID (11 characters)
     /^([a-zA-Z0-9_-]{11})$/
   ]
 
