@@ -13,9 +13,9 @@ export default function Footer() {
           <Image
             src="/logo-white.png"
             alt="Bahrain Nights - Film Production"
-            width={160}
-            height={44}
-            className="h-10 w-auto opacity-70"
+            width={480}
+            height={132}
+            className="h-32 w-auto opacity-70"
           />
 
           {/* Copyright */}
