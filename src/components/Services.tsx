@@ -57,6 +57,48 @@ const services = [
       </svg>
     ),
   },
+  {
+    title: 'Documentary Production',
+    description: 'Compelling narratives that document stories worth telling with cinematic quality and emotional depth.',
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Pre-Production',
+    description: 'Complete planning services including storyboarding, location scouting, casting, and production scheduling.',
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Post-Production',
+    description: 'Professional editing, color grading, sound design, and finishing to broadcast and cinema standards.',
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+      </svg>
+    ),
+  },
+]
+
+const teamRoles = [
+  { title: 'Creative Director', icon: '🎬' },
+  { title: 'Producer', icon: '🎯' },
+  { title: 'Director of Photography', icon: '📷' },
+  { title: 'DP Assistant', icon: '🎥' },
+  { title: 'Audio Engineer', icon: '🎙️' },
+  { title: 'Editor', icon: '✂️' },
+  { title: 'Colorist', icon: '🎨' },
+  { title: 'VFX Artist', icon: '✨' },
+  { title: 'SFX Artist', icon: '💥' },
+  { title: 'Motion Graphics', icon: '🔮' },
+  { title: 'Stylist', icon: '👔' },
+  { title: 'Makeup Artist', icon: '💄' },
 ]
 
 export default function Services() {
@@ -80,14 +122,14 @@ export default function Services() {
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
               className="group"
             >
               <div className="bg-zinc-900/50 border border-white/10 group-hover:border-film-gold/50 rounded-xl p-6 transition-colors duration-300 h-full">
@@ -97,13 +139,51 @@ export default function Services() {
                 <h3 className="font-display text-xl md:text-2xl text-white mb-3">
                   {service.title}
                 </h3>
-                <p className="font-body text-white/60 leading-relaxed">
+                <p className="font-body text-white/60 leading-relaxed text-sm md:text-base">
                   {service.description}
                 </p>
               </div>
             </motion.div>
           ))}
         </div>
+
+        {/* Team Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-24 pt-16 border-t border-white/10"
+        >
+          <div className="text-center mb-12">
+            <p className="text-film-gold font-body text-sm tracking-widest uppercase mb-4">
+              Our Team
+            </p>
+            <h3 className="font-display text-2xl md:text-4xl text-white mb-4">
+              Expert Professionals
+            </h3>
+            <p className="font-body text-white/60 max-w-2xl mx-auto">
+              Our in-house team of specialists ensures every aspect of your production
+              is handled with expertise and creativity.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {teamRoles.map((role, index) => (
+              <motion.div
+                key={role.title}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+                className="bg-zinc-900/30 border border-white/5 hover:border-film-gold/30 rounded-lg p-4 text-center transition-colors duration-300"
+              >
+                <div className="text-3xl mb-2">{role.icon}</div>
+                <p className="font-body text-white/80 text-sm">{role.title}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
         {/* Capabilities */}
         <motion.div
@@ -119,7 +199,7 @@ export default function Services() {
                 Technical Excellence
               </h3>
               <p className="font-body text-white/60 max-w-xl">
-                We shoot in 4K up to 120fps, 10-bit color depth with cinema-grade color science. 
+                We shoot in 4K up to 120fps, 10-bit color depth with cinema-grade color science.
                 Every frame is crafted for broadcast and digital delivery.
               </p>
             </div>
