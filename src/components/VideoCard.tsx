@@ -58,8 +58,8 @@ export default function VideoCard({ videoId, title, onClick, isShort = false }: 
         
         {/* Play Button */}
         <div className={`play-icon absolute inset-0 flex items-center justify-center transition-all duration-300 ${isHovered ? 'opacity-100' : 'opacity-0 md:opacity-70'}`}>
-          <div className="w-14 h-14 md:w-16 md:h-16 bg-white/95 rounded-full flex items-center justify-center shadow-2xl">
-            <svg className="w-6 h-6 md:w-7 md:h-7 text-film-black ml-1" fill="currentColor" viewBox="0 0 24 24">
+          <div className="w-[70px] h-[70px] md:w-20 md:h-20 bg-white/95 rounded-full flex items-center justify-center shadow-2xl">
+            <svg className="w-[30px] h-[30px] md:w-9 md:h-9 text-film-black ml-1" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8 5v14l11-7z" />
             </svg>
           </div>
