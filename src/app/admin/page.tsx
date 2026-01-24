@@ -13,6 +13,7 @@ export default function AdminDashboard() {
   const [showAddModal, setShowAddModal] = useState(false)
   const [editingVideo, setEditingVideo] = useState<Video | null>(null)
   const [draggedVideo, setDraggedVideo] = useState<Video | null>(null)
+  const [dragOverVideo, setDragOverVideo] = useState<string | null>(null)
 
   // Form states
   const [newUrl, setNewUrl] = useState('')
@@ -147,23 +148,66 @@ export default function AdminDashboard() {
     }
   }
 
-  const handleDragStart = (video: Video) => {
+  const handleDragStart = (e: React.DragEvent, video: Video) => {
     setDraggedVideo(video)
+    e.dataTransfer.effectAllowed = 'move'
+    e.dataTransfer.setData('text/plain', video.id)
+    // Add a slight delay to allow the drag image to be set
+    setTimeout(() => {
+      const target = e.target as HTMLElement
+      target.style.opacity = '0.5'
+    }, 0)
   }
 
-  const handleDragOver = (e: React.DragEvent) => {
+  const handleDragEnd = (e: React.DragEvent) => {
+    const target = e.target as HTMLElement
+    target.style.opacity = '1'
+    setDraggedVideo(null)
+    setDragOverVideo(null)
+  }
+
+  const handleDragOver = (e: React.DragEvent, videoId: string) => {
     e.preventDefault()
+    e.dataTransfer.dropEffect = 'move'
+    if (draggedVideo && draggedVideo.id !== videoId) {
+      setDragOverVideo(videoId)
+    }
   }
 
-  const handleDrop = async (targetVideo: Video) => {
-    if (!draggedVideo || draggedVideo.id === targetVideo.id || !videoData) return
+  const handleDragLeave = () => {
+    setDragOverVideo(null)
+  }
+
+  const handleDrop = async (e: React.DragEvent, targetVideo: Video) => {
+    e.preventDefault()
+    setDragOverVideo(null)
+
+    if (!draggedVideo || draggedVideo.id === targetVideo.id || !videoData) {
+      setDraggedVideo(null)
+      return
+    }
 
     const videos = activeTab === 'main' ? [...videoData.mainVideos] : [...videoData.shortVideos]
     const draggedIndex = videos.findIndex((v) => v.id === draggedVideo.id)
     const targetIndex = videos.findIndex((v) => v.id === targetVideo.id)
 
-    videos.splice(draggedIndex, 1)
-    videos.splice(targetIndex, 0, draggedVideo)
+    if (draggedIndex === -1 || targetIndex === -1) {
+      setDraggedVideo(null)
+      return
+    }
+
+    // Remove dragged video and insert at target position
+    const [removed] = videos.splice(draggedIndex, 1)
+    videos.splice(targetIndex, 0, removed)
+
+    // Optimistically update UI
+    const updatedData = { ...videoData }
+    if (activeTab === 'main') {
+      updatedData.mainVideos = videos.map((v, i) => ({ ...v, order: i + 1 }))
+    } else {
+      updatedData.shortVideos = videos.map((v, i) => ({ ...v, order: i + 1 }))
+    }
+    setVideoData(updatedData)
 
     const orderedIds = videos.map((v) => v.id)
 
@@ -175,9 +219,14 @@ export default function AdminDashboard() {
       })
 
       if (response.ok) {
+        showMessage('success', 'Videos reordered successfully')
+      } else {
+        // Revert on failure
         await fetchData()
+        showMessage('error', 'Failed to reorder videos')
       }
     } catch {
+      await fetchData()
       showMessage('error', 'Failed to reorder videos')
     }
 
@@ -370,11 +419,17 @@ export default function AdminDashboard() {
                   <div
                     key={video.id}
                     draggable
-                    onDragStart={() => handleDragStart(video)}
-                    onDragOver={handleDragOver}
-                    onDrop={() => handleDrop(video)}
-                    className={`bg-zinc-900 rounded-lg border border-zinc-800 overflow-hidden cursor-move transition-all ${
-                      draggedVideo?.id === video.id ? 'opacity-50 scale-95' : ''
+                    onDragStart={(e) => handleDragStart(e, video)}
+                    onDragEnd={handleDragEnd}
+                    onDragOver={(e) => handleDragOver(e, video.id)}
+                    onDragLeave={handleDragLeave}
+                    onDrop={(e) => handleDrop(e, video)}
+                    className={`bg-zinc-900 rounded-lg border-2 overflow-hidden cursor-move transition-all ${
+                      draggedVideo?.id === video.id
+                        ? 'opacity-50 scale-95 border-zinc-800'
+                        : dragOverVideo === video.id
+                          ? 'border-film-gold scale-105'
+                          : 'border-zinc-800 hover:border-zinc-700'
                     }`}
                   >
                     {/* Thumbnail */}
