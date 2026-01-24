@@ -34,6 +34,8 @@ const shortsVideos = [
   { id: 'VkkpE2-TQaI', title: 'Creative Short' },
   { id: 'I3cFaJpgaqY', title: 'Cinematic Short' },
   { id: 'slqlSihBWoU', title: 'Brand Short' },
+  { id: 'doOcRmaAo40', title: 'Mini Film' },
+  { id: '6UPsb8en72Y', title: 'Quick Cut' },
 ]
 
 interface Video {
