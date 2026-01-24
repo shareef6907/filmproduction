@@ -236,12 +236,12 @@ export default function Services() {
                 Technical Excellence
               </h3>
               <p className="font-body text-white/60 max-w-xl">
-                We shoot in 4K up to 120fps, 10-bit color depth with cinema-grade color science.
-                Every frame is crafted for broadcast and digital delivery.
+                We shoot in 4K up to 120fps with S-Cinetone color science, 10-bit 4:2:2 sampling,
+                and full-frame sensors. Every frame is crafted for broadcast and digital delivery.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              {['4K 120fps', '10-bit Color', 'S-Log3', 'HDR Ready'].map((spec) => (
+              {['4K 120fps', 'S-Cinetone', '10-bit 4:2:2', 'Dual ISO', 'Full-Frame'].map((spec) => (
                 <span
                   key={spec}
                   className="px-4 py-2 border border-white/20 rounded-full text-sm font-body text-white/70"
