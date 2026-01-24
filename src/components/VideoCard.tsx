@@ -25,7 +25,7 @@ export default function VideoCard({ videoId, title, onClick, isShort = false }: 
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className={`video-card relative group cursor-pointer rounded-md overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-film-gold ${
-        isShort ? 'w-[140px] md:w-[180px]' : 'w-[280px] md:w-[320px]'
+        isShort ? 'w-[175px] md:w-[225px]' : 'w-[350px] md:w-[400px]'
       }`}
       aria-label={`Play ${title}`}
     >
@@ -41,7 +41,7 @@ export default function VideoCard({ videoId, title, onClick, isShort = false }: 
           src={thumbnailUrl}
           alt={title}
           fill
-          sizes={isShort ? '180px' : '320px'}
+          sizes={isShort ? '225px' : '400px'}
           className={`object-cover transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
           onLoad={() => setImageLoaded(true)}
           onError={(e) => {
