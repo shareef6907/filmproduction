@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Hero from '@/components/Hero'
 import VideoRow from '@/components/VideoRow'
 import VideoModal from '@/components/VideoModal'
@@ -8,44 +8,63 @@ import Services from '@/components/Services'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
-
-// Video data - Main work
-const mainVideos = [
-  { id: 'ne15w87EA4Q', title: 'Cinematic Production' },
-  { id: 'F2Mw7tngDXY', title: 'Brand Story' },
-  { id: 'V_KYSgqXGLE', title: 'Commercial Film' },
-  { id: 'fxhFx-VGxXg', title: 'Corporate Video' },
-  { id: 'EAIhJ6V6ALw', title: 'Event Coverage' },
-  { id: 'Uanc4fHO7h8', title: 'Documentary' },
-  { id: 'nBkEOeIk5sw', title: 'Lifestyle Film' },
-  { id: 'RwAU6591jxk', title: 'Brand Commercial' },
-  { id: 'ZEzXKAJonkw', title: 'Corporate Story' },
-  { id: 'O3Trz6ucsIU', title: 'Creative Film' },
-  { id: 'OTH6HiqY7v0', title: 'Production Showcase' },
-  { id: 'UHt7uhUsOqI', title: 'Visual Story' },
-  { id: '9D3mbt5LI8M', title: 'Premium Content' },
-]
-
-// Video data - Shorts
-const shortsVideos = [
-  { id: 'SurvKFufnm0', title: 'Short Film' },
-  { id: 'jlLbdcOu758', title: 'Quick Story' },
-  { id: '1lWQjCAnA8g', title: 'Visual Moment' },
-  { id: 'VkkpE2-TQaI', title: 'Creative Short' },
-  { id: 'I3cFaJpgaqY', title: 'Cinematic Short' },
-  { id: 'slqlSihBWoU', title: 'Brand Short' },
-  { id: 'doOcRmaAo40', title: 'Mini Film' },
-  { id: '6UPsb8en72Y', title: 'Quick Cut' },
-]
+import { VideoData } from '@/types/video'
 
 interface Video {
   id: string
   title: string
 }
 
+// Fallback data in case API fails
+const fallbackData: VideoData = {
+  mainVideos: [
+    { id: 'ne15w87EA4Q', title: 'Cinematic Production', order: 1 },
+    { id: 'F2Mw7tngDXY', title: 'Brand Story', order: 2 },
+    { id: 'V_KYSgqXGLE', title: 'Commercial Film', order: 3 },
+    { id: 'fxhFx-VGxXg', title: 'Corporate Video', order: 4 },
+    { id: 'EAIhJ6V6ALw', title: 'Event Coverage', order: 5 },
+    { id: 'Uanc4fHO7h8', title: 'Documentary', order: 6 },
+    { id: 'nBkEOeIk5sw', title: 'Lifestyle Film', order: 7 },
+    { id: 'RwAU6591jxk', title: 'Brand Commercial', order: 8 },
+    { id: 'ZEzXKAJonkw', title: 'Corporate Story', order: 9 },
+    { id: 'O3Trz6ucsIU', title: 'Creative Film', order: 10 },
+    { id: 'OTH6HiqY7v0', title: 'Production Showcase', order: 11 },
+    { id: 'UHt7uhUsOqI', title: 'Visual Story', order: 12 },
+    { id: '9D3mbt5LI8M', title: 'Premium Content', order: 13 },
+  ],
+  shortVideos: [
+    { id: 'SurvKFufnm0', title: 'Short Film', order: 1 },
+    { id: 'jlLbdcOu758', title: 'Quick Story', order: 2 },
+    { id: '1lWQjCAnA8g', title: 'Visual Moment', order: 3 },
+    { id: 'VkkpE2-TQaI', title: 'Creative Short', order: 4 },
+    { id: 'I3cFaJpgaqY', title: 'Cinematic Short', order: 5 },
+    { id: 'slqlSihBWoU', title: 'Brand Short', order: 6 },
+    { id: 'doOcRmaAo40', title: 'Mini Film', order: 7 },
+    { id: '6UPsb8en72Y', title: 'Quick Cut', order: 8 },
+  ],
+  headerVideo: '/header-video.mp4'
+}
+
 export default function Home() {
   const [selectedVideo, setSelectedVideo] = useState<Video | null>(null)
   const [isShort, setIsShort] = useState(false)
+  const [videoData, setVideoData] = useState<VideoData>(fallbackData)
+
+  useEffect(() => {
+    const fetchVideos = async () => {
+      try {
+        const response = await fetch('/api/videos')
+        if (response.ok) {
+          const data = await response.json()
+          setVideoData(data)
+        }
+      } catch (error) {
+        console.error('Error fetching videos:', error)
+        // Keep using fallback data
+      }
+    }
+    fetchVideos()
+  }, [])
 
   const handleVideoClick = (video: Video, short: boolean = false) => {
     setSelectedVideo(video)
@@ -57,10 +76,14 @@ export default function Home() {
     setIsShort(false)
   }
 
+  // Sort videos by order
+  const mainVideos = [...videoData.mainVideos].sort((a, b) => a.order - b.order)
+  const shortVideos = [...videoData.shortVideos].sort((a, b) => a.order - b.order)
+
   return (
     <main className="min-h-screen bg-film-black">
       {/* Hero Section */}
-      <Hero />
+      <Hero headerVideo={videoData.headerVideo} />
 
       {/* Video Sections */}
       <section id="work" className="pt-8 pb-16">
@@ -74,7 +97,7 @@ export default function Home() {
         {/* Shorts Row */}
         <VideoRow
           title="Short Films"
-          videos={shortsVideos}
+          videos={shortVideos}
           onVideoClick={(video) => handleVideoClick(video, true)}
           isShorts={true}
         />

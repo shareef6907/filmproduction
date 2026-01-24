@@ -3,7 +3,11 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-export default function Hero() {
+interface HeroProps {
+  headerVideo?: string
+}
+
+export default function Hero({ headerVideo = '/header-video.mp4' }: HeroProps) {
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -24,8 +28,9 @@ export default function Hero() {
           preload="auto"
           className="w-full h-full object-cover"
           poster="/poster.jpg"
+          key={headerVideo}
         >
-          <source src="/header-video.mp4" type="video/mp4" />
+          <source src={headerVideo} type="video/mp4" />
         </video>
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/50" />
