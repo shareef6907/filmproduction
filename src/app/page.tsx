@@ -6,6 +6,7 @@ import VideoRow from '@/components/VideoRow'
 import VideoModal from '@/components/VideoModal'
 import Services from '@/components/Services'
 import About from '@/components/About'
+import Testimonials from '@/components/Testimonials'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import { VideoData } from '@/types/video'
@@ -108,6 +109,9 @@ export default function Home() {
 
       {/* About Section */}
       <About />
+
+      {/* Testimonials Section */}
+      <Testimonials />
 
       {/* Contact Section */}
       <Contact />
