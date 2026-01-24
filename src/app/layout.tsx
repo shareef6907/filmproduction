@@ -8,6 +8,13 @@ export const metadata: Metadata = {
     template: '%s | Film Production Bahrain'
   },
   description: 'Bahrain\'s leading film production agency. Premium brand films, commercials, corporate videos, documentaries, and event coverage. 10+ years of cinematic excellence.',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.ico', type: 'image/x-icon' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
   keywords: [
     'film production bahrain',
     'video production bahrain',
@@ -76,8 +83,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className="antialiased">
