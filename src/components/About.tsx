@@ -39,8 +39,8 @@ export default function About() {
         >
           {[
             { number: '10+', label: 'Years Experience' },
-            { number: '200+', label: 'Projects Delivered' },
-            { number: '50+', label: 'Happy Clients' },
+            { number: '900+', label: 'Projects Delivered' },
+            { number: '100+', label: 'Global Clients' },
           ].map((stat, index) => (
             <div key={stat.label} className="text-center">
               <div className="font-display text-4xl md:text-5xl text-white mb-2">
