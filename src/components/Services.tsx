@@ -4,28 +4,28 @@ import { motion } from 'framer-motion'
 
 const services = [
   {
-    title: 'Brand Films & Commercials',
-    description: 'Cinematic storytelling that elevates your brand and captivates audiences.',
+    title: 'Wedding Videography',
+    description: 'Cinematic wedding films capturing your special day in Bahrain with stunning storytelling that you will cherish forever.',
   },
   {
     title: 'Corporate Videos',
-    description: 'Professional content for internal communications, training, and corporate events.',
-  },
-  {
-    title: 'Documentary Production',
-    description: 'Compelling narratives that document stories worth telling.',
+    description: 'Professional corporate video production to showcase your Bahrain business and engage your audience with compelling content.',
   },
   {
     title: 'Event Coverage',
-    description: 'Premium capture of conferences, launches, and milestone moments.',
+    description: 'Dynamic event videography in Bahrain covering conferences, concerts, and special events with professional quality.',
   },
   {
-    title: 'Hospitality & Real Estate',
-    description: 'Stunning visuals that showcase spaces and experiences.',
+    title: 'TVC Advertisements',
+    description: 'Capture the moment with precision and passion—your product deserves a cinematic spotlight.',
   },
   {
-    title: 'Post-Production',
-    description: 'Color grading, editing, and finishing to broadcast standards.',
+    title: 'Multi-Cam Live Streaming',
+    description: 'Professional live streaming services in Bahrain with multiple camera angles for events, conferences and virtual experiences.',
+  },
+  {
+    title: 'Podcast Filming',
+    description: 'High-quality podcast video production in Bahrain with professional lighting, sound and cinematic visuals.',
   },
 ]
 
