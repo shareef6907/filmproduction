@@ -1,29 +1,75 @@
-import { promises as fs } from 'fs'
-import path from 'path'
+import { Redis } from '@upstash/redis'
 import { VideoData, Video } from '@/types/video'
 
-const DATA_FILE_PATH = path.join(process.cwd(), 'data', 'videos.json')
+// Initialize Redis client
+const redis = new Redis({
+  url: process.env.KV_REST_API_URL || '',
+  token: process.env.KV_REST_API_TOKEN || '',
+})
+
+const VIDEO_DATA_KEY = 'video_data'
+
+// Default data (used for initial setup)
+const defaultVideoData: VideoData = {
+  mainVideos: [
+    { id: 'ne15w87EA4Q', title: 'Cinematic Production', order: 1 },
+    { id: 'F2Mw7tngDXY', title: 'Brand Story', order: 2 },
+    { id: 'V_KYSgqXGLE', title: 'Commercial Film', order: 3 },
+    { id: 'fxhFx-VGxXg', title: 'Corporate Video', order: 4 },
+    { id: 'EAIhJ6V6ALw', title: 'Event Coverage', order: 5 },
+    { id: 'Uanc4fHO7h8', title: 'Documentary', order: 6 },
+    { id: 'nBkEOeIk5sw', title: 'Lifestyle Film', order: 7 },
+    { id: 'RwAU6591jxk', title: 'Brand Commercial', order: 8 },
+    { id: 'ZEzXKAJonkw', title: 'Corporate Story', order: 9 },
+    { id: 'O3Trz6ucsIU', title: 'Creative Film', order: 10 },
+    { id: 'OTH6HiqY7v0', title: 'Production Showcase', order: 11 },
+    { id: 'UHt7uhUsOqI', title: 'Visual Story', order: 12 },
+    { id: '9D3mbt5LI8M', title: 'Premium Content', order: 13 },
+  ],
+  shortVideos: [
+    { id: 'SurvKFufnm0', title: 'Short Film', order: 1 },
+    { id: 'jlLbdcOu758', title: 'Quick Story', order: 2 },
+    { id: '1lWQjCAnA8g', title: 'Visual Moment', order: 3 },
+    { id: 'VkkpE2-TQaI', title: 'Creative Short', order: 4 },
+    { id: 'I3cFaJpgaqY', title: 'Cinematic Short', order: 5 },
+    { id: 'slqlSihBWoU', title: 'Brand Short', order: 6 },
+    { id: 'doOcRmaAo40', title: 'Mini Film', order: 7 },
+    { id: '6UPsb8en72Y', title: 'Quick Cut', order: 8 },
+  ],
+  headerVideo: '/header-video.mp4'
+}
 
 export async function getVideoData(): Promise<VideoData> {
   try {
-    const data = await fs.readFile(DATA_FILE_PATH, 'utf-8')
-    return JSON.parse(data)
-  } catch (error) {
-    console.error('Error reading video data:', error)
-    // Return default data if file doesn't exist
-    return {
-      mainVideos: [],
-      shortVideos: [],
-      headerVideo: '/header-video.mp4'
+    // Check if Redis is configured
+    if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) {
+      console.log('Redis not configured, using default data')
+      return defaultVideoData
     }
+
+    const data = await redis.get<VideoData>(VIDEO_DATA_KEY)
+
+    if (!data) {
+      // Initialize with default data if nothing exists
+      await redis.set(VIDEO_DATA_KEY, defaultVideoData)
+      return defaultVideoData
+    }
+
+    return data
+  } catch (error) {
+    console.error('Error reading video data from Redis:', error)
+    return defaultVideoData
   }
 }
 
 export async function saveVideoData(data: VideoData): Promise<void> {
   try {
-    await fs.writeFile(DATA_FILE_PATH, JSON.stringify(data, null, 2), 'utf-8')
+    if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) {
+      throw new Error('Redis not configured')
+    }
+    await redis.set(VIDEO_DATA_KEY, data)
   } catch (error) {
-    console.error('Error saving video data:', error)
+    console.error('Error saving video data to Redis:', error)
     throw new Error('Failed to save video data')
   }
 }
