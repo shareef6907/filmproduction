@@ -52,9 +52,9 @@ export default function Hero({ headerVideo = '/header-video.mp4' }: HeroProps) {
             <Image
               src="/logo-white.png"
               alt="Bahrain Nights - Film Production"
-              width={220}
-              height={60}
-              className="h-12 md:h-16 w-auto"
+              width={440}
+              height={120}
+              className="h-24 md:h-32 w-auto"
               priority
             />
           </motion.div>
