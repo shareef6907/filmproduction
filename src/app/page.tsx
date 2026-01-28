@@ -2,10 +2,16 @@
 
 import { useState, useEffect } from 'react'
 import Hero from '@/components/Hero'
+import Achievements from '@/components/Achievements'
 import VideoRow from '@/components/VideoRow'
 import VideoModal from '@/components/VideoModal'
 import Services from '@/components/Services'
+import Clients from '@/components/Clients'
+import Equipment from '@/components/Equipment'
+import Packages from '@/components/Packages'
+import Testimonials from '@/components/Testimonials'
 import About from '@/components/About'
+import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import { VideoData } from '@/types/video'
@@ -15,30 +21,30 @@ interface Video {
   title: string
 }
 
-// Fallback data in case API fails
+// Fallback data in case API fails - descriptive titles for better portfolio presentation
 const fallbackData: VideoData = {
   mainVideos: [
-    { id: 'ne15w87EA4Q', title: 'Cinematic Production', order: 1 },
-    { id: 'F2Mw7tngDXY', title: 'Brand Story', order: 2 },
-    { id: 'V_KYSgqXGLE', title: 'Commercial Film', order: 3 },
-    { id: 'fxhFx-VGxXg', title: 'Corporate Video', order: 4 },
-    { id: 'EAIhJ6V6ALw', title: 'Event Coverage', order: 5 },
-    { id: 'Uanc4fHO7h8', title: 'Documentary', order: 6 },
-    { id: 'nBkEOeIk5sw', title: 'Lifestyle Film', order: 7 },
-    { id: 'ZEzXKAJonkw', title: 'Corporate Story', order: 8 },
-    { id: 'OTH6HiqY7v0', title: 'Production Showcase', order: 9 },
-    { id: 'UHt7uhUsOqI', title: 'Visual Story', order: 10 },
-    { id: '9D3mbt5LI8M', title: 'Premium Content', order: 11 },
+    { id: 'ne15w87EA4Q', title: 'Luxury Resort | Brand Film', order: 1 },
+    { id: 'F2Mw7tngDXY', title: 'Corporate Profile | Finance', order: 2 },
+    { id: 'V_KYSgqXGLE', title: 'Product Launch | Commercial', order: 3 },
+    { id: 'fxhFx-VGxXg', title: 'CEO Interview | Corporate', order: 4 },
+    { id: 'EAIhJ6V6ALw', title: 'Annual Gala | Event Highlight', order: 5 },
+    { id: 'Uanc4fHO7h8', title: 'Heritage Story | Documentary', order: 6 },
+    { id: 'nBkEOeIk5sw', title: 'Lifestyle Campaign | Fashion', order: 7 },
+    { id: 'ZEzXKAJonkw', title: 'Company Vision | Brand Story', order: 8 },
+    { id: 'OTH6HiqY7v0', title: 'Real Estate | Property Tour', order: 9 },
+    { id: 'UHt7uhUsOqI', title: 'Tech Startup | Profile Film', order: 10 },
+    { id: '9D3mbt5LI8M', title: 'Hospitality | Hotel Promo', order: 11 },
   ],
   shortVideos: [
-    { id: 'SurvKFufnm0', title: 'Short Film', order: 1 },
-    { id: 'jlLbdcOu758', title: 'Quick Story', order: 2 },
-    { id: '1lWQjCAnA8g', title: 'Visual Moment', order: 3 },
-    { id: 'VkkpE2-TQaI', title: 'Creative Short', order: 4 },
-    { id: 'I3cFaJpgaqY', title: 'Cinematic Short', order: 5 },
-    { id: 'slqlSihBWoU', title: 'Brand Short', order: 6 },
-    { id: 'doOcRmaAo40', title: 'Mini Film', order: 7 },
-    { id: '6UPsb8en72Y', title: 'Quick Cut', order: 8 },
+    { id: 'SurvKFufnm0', title: 'Social Reel | Restaurant', order: 1 },
+    { id: 'jlLbdcOu758', title: 'Behind the Scenes | BTS', order: 2 },
+    { id: '1lWQjCAnA8g', title: 'Product Teaser | Launch', order: 3 },
+    { id: 'VkkpE2-TQaI', title: 'Instagram Story | Retail', order: 4 },
+    { id: 'I3cFaJpgaqY', title: 'Event Recap | Conference', order: 5 },
+    { id: 'slqlSihBWoU', title: 'Quick Promo | Brand', order: 6 },
+    { id: 'doOcRmaAo40', title: 'Testimonial Clip | Client', order: 7 },
+    { id: '6UPsb8en72Y', title: 'TikTok Ad | Campaign', order: 8 },
   ],
   headerVideo: '/header-video.mp4'
 }
@@ -58,7 +64,6 @@ export default function Home() {
         }
       } catch (error) {
         console.error('Error fetching videos:', error)
-        // Keep using fallback data
       }
     }
     fetchVideos()
@@ -74,7 +79,6 @@ export default function Home() {
     setIsShort(false)
   }
 
-  // Sort videos by order
   const mainVideos = [...videoData.mainVideos].sort((a, b) => a.order - b.order)
   const shortVideos = [...videoData.shortVideos].sort((a, b) => a.order - b.order)
 
@@ -83,16 +87,16 @@ export default function Home() {
       {/* Hero Section */}
       <Hero headerVideo={videoData.headerVideo} />
 
-      {/* Video Sections */}
+      {/* Achievement Banner - Trust signals right after hero */}
+      <Achievements />
+
+      {/* Video Portfolio Sections */}
       <section id="work" className="pt-8 pb-16">
-        {/* Main Videos Row */}
         <VideoRow
           title="Our Work"
           videos={mainVideos}
           onVideoClick={(video) => handleVideoClick(video, false)}
         />
-
-        {/* Shorts Row */}
         <VideoRow
           title="Short Films"
           videos={shortVideos}
@@ -101,11 +105,26 @@ export default function Home() {
         />
       </section>
 
+      {/* Client Logos - Social proof */}
+      <Clients />
+
       {/* Services Section */}
       <Services />
 
+      {/* Equipment & Technology - Establishes credibility */}
+      <Equipment />
+
+      {/* Pricing Packages - Clear offerings */}
+      <Packages />
+
+      {/* Testimonials - Social proof */}
+      <Testimonials />
+
       {/* About Section */}
       <About />
+
+      {/* FAQ - SEO boost and user help */}
+      <FAQ />
 
       {/* Contact Section */}
       <Contact />
