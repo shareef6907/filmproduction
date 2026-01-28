@@ -29,6 +29,51 @@ const schemaMarkup = {
       areaServed: 'Bahrain',
       serviceType: 'Corporate Video Production',
     },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'How much does a corporate video cost in Bahrain?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Corporate video production in Bahrain starts from BHD 500 for a simple interview or testimonial video. Company profile videos typically range from BHD 1,000-3,000, and multi-day productions with complex requirements are custom-quoted. Contact us for a tailored proposal.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you film at our office or business location in Bahrain?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes, we specialize in on-location filming at offices, factories, retail spaces, and business facilities across Bahrain. We bring all necessary equipment including lighting, audio, and cameras — no studio needed.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you produce corporate videos in Arabic and English?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes, our bilingual team produces corporate videos in both English and Arabic. We offer scriptwriting, voiceover, subtitling, and on-screen text in both languages to reach your full audience in Bahrain and across the GCC.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How long does it take to produce a corporate video?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A standard corporate video typically takes 1-2 weeks from filming to final delivery. Company profiles and multi-segment productions may take 2-3 weeks. We offer expedited delivery for urgent projects.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What types of corporate videos do you produce?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We produce company profiles, executive interviews, training videos, investor presentations, product demos, internal communications, event coverage, testimonials, and recruitment videos for businesses across all industries in Bahrain.',
+          },
+        },
+      ],
+    },
   ],
 }
 
@@ -131,6 +176,31 @@ export default function CorporateVideoContent() {
               </p>
             </div>
           </motion.div>
+        </div>
+      </section>
+      {/* FAQ Section */}
+      <section className="py-16 px-4 md:px-12 lg:px-16 border-t border-white/5">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-3xl md:text-4xl text-white mb-8">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {[
+              { q: 'How much does a corporate video cost in Bahrain?', a: 'Starts from BHD 500 for interviews/testimonials. Company profiles range from BHD 1,000-3,000. Complex productions are custom-quoted.' },
+              { q: 'Can you film at our office or business location?', a: 'Yes, we specialize in on-location filming at offices, factories, retail spaces, and business facilities across Bahrain. We bring all equipment needed.' },
+              { q: 'Do you produce videos in Arabic and English?', a: 'Yes, our bilingual team handles scriptwriting, voiceover, subtitling, and on-screen text in both English and Arabic.' },
+              { q: 'How long does it take to produce a corporate video?', a: 'Standard corporate videos take 1-2 weeks. Company profiles and multi-segment productions may take 2-3 weeks. Expedited delivery is available.' },
+              { q: 'What types of corporate videos do you produce?', a: 'Company profiles, executive interviews, training videos, investor presentations, product demos, internal comms, event coverage, testimonials, and recruitment videos.' },
+            ].map((faq) => (
+              <details key={faq.q} className="bg-zinc-900/50 border border-white/10 rounded-xl group">
+                <summary className="p-5 cursor-pointer font-display text-white hover:text-film-gold transition-colors list-none flex justify-between items-center">
+                  {faq.q}
+                  <span className="text-film-gold ml-2 group-open:rotate-45 transition-transform text-xl">+</span>
+                </summary>
+                <p className="px-5 pb-5 font-body text-white/60 leading-relaxed">{faq.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
     </ServicePageLayout>

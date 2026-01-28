@@ -30,6 +30,51 @@ const schemaMarkup = {
       serviceType: 'Film Production',
     },
     {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is the best film production company in Bahrain?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Bahrain Nights is one of the leading film production companies in Bahrain, offering a full in-house team including directors, cinematographers, editors, colorists, and VFX artists. We produce brand films, documentaries, commercials, and short films with cinema-grade quality.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you offer full-service film production in Bahrain?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes, we handle every aspect of filmmaking — concept development, scriptwriting, pre-production planning, filming with cinema-grade equipment, editing, color grading, sound design, VFX, and final delivery. One team, one point of contact, from start to finish.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you produce content for international distribution?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Absolutely. We shoot in 4K with broadcast-standard specifications including 10-bit color depth and Dolby-compliant audio. Our content meets technical requirements for TV broadcast, cinema, streaming platforms, and international film festivals.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you work outside of Bahrain?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes, while based in Manama, Bahrain, we take on projects across the GCC region including Saudi Arabia, UAE, Kuwait, Qatar, and Oman. We travel with our equipment and crew for productions anywhere in the Gulf.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What makes Bahrain Nights different from other production companies?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We maintain a complete in-house team (director, DP, editor, colorist, VFX, motion graphics, stylist, makeup) rather than outsourcing. This ensures consistent quality, faster turnaround, unified creative vision, and competitive pricing.',
+          },
+        },
+      ],
+    },
+    {
       '@type': 'VideoObject',
       name: 'Bahrain Nights Film Production Showreel',
       description: 'Showcasing our cinematic film production work across Bahrain.',
@@ -130,6 +175,31 @@ export default function FilmProductionContent() {
               </p>
             </div>
           </motion.div>
+        </div>
+      </section>
+      {/* FAQ Section */}
+      <section className="py-16 px-4 md:px-12 lg:px-16 border-t border-white/5">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-3xl md:text-4xl text-white mb-8">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {[
+              { q: 'What is the best film production company in Bahrain?', a: 'Bahrain Nights is one of the leading film production companies in Bahrain, with a full in-house team producing brand films, documentaries, commercials, and short films at cinema-grade quality.' },
+              { q: 'Do you offer full-service film production?', a: 'Yes — concept development, scriptwriting, pre-production, filming, editing, color grading, sound design, VFX, and final delivery. One team from start to finish.' },
+              { q: 'Can you produce content for international distribution?', a: 'Absolutely. We shoot in 4K with broadcast-standard specs including 10-bit color and Dolby-compliant audio, meeting requirements for TV, cinema, and streaming platforms.' },
+              { q: 'Do you work outside of Bahrain?', a: 'Yes, we take on projects across the GCC — Saudi Arabia, UAE, Kuwait, Qatar, and Oman. We travel with our equipment and crew.' },
+              { q: 'What makes Bahrain Nights different?', a: 'A complete in-house team (director, DP, editor, colorist, VFX, motion graphics, stylist, makeup) ensures consistent quality, faster turnaround, and competitive pricing.' },
+            ].map((faq) => (
+              <details key={faq.q} className="bg-zinc-900/50 border border-white/10 rounded-xl group">
+                <summary className="p-5 cursor-pointer font-display text-white hover:text-film-gold transition-colors list-none flex justify-between items-center">
+                  {faq.q}
+                  <span className="text-film-gold ml-2 group-open:rotate-45 transition-transform text-xl">+</span>
+                </summary>
+                <p className="px-5 pb-5 font-body text-white/60 leading-relaxed">{faq.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
     </ServicePageLayout>

@@ -29,6 +29,51 @@ const schemaMarkup = {
       areaServed: 'Bahrain',
       serviceType: 'Video Production',
     },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'How much does video production cost in Bahrain?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Video production costs in Bahrain vary based on project scope. Social media content starts from BHD 200, corporate videos from BHD 500, brand films from BHD 1,500, and TV commercials from BHD 3,000. Contact us for a detailed quote tailored to your project.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How long does it take to produce a video in Bahrain?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Timeline depends on complexity. Social media content can be delivered in 3-5 days, corporate videos in 1-2 weeks, and brand films or commercials in 2-4 weeks. Rush delivery is available for urgent projects.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What equipment do you use for video production?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We shoot on cinema-grade cameras including Sony FX6 and FX3 in 4K at up to 120fps with 10-bit 4:2:2 color depth. Our kit includes professional lighting, cinema lenses, gimbals, drones, and wireless audio systems for broadcast-quality results.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you provide scriptwriting and creative direction?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes, we offer full pre-production services including creative concept development, scriptwriting, storyboarding, location scouting, casting, and production planning. Our creative directors work with you from initial idea to final delivery.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you produce videos for social media platforms?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Absolutely. We create platform-optimized content for Instagram Reels, TikTok, YouTube, LinkedIn, and other social media platforms. This includes vertical and square formats, captions, and platform-specific editing styles.',
+          },
+        },
+      ],
+    },
   ],
 }
 
@@ -132,6 +177,31 @@ export default function VideoProductionContent() {
               </div>
             </div>
           </motion.div>
+        </div>
+      </section>
+      {/* FAQ Section */}
+      <section className="py-16 px-4 md:px-12 lg:px-16 border-t border-white/5">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-3xl md:text-4xl text-white mb-8">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {[
+              { q: 'How much does video production cost in Bahrain?', a: 'Social media content starts from BHD 200, corporate videos from BHD 500, brand films from BHD 1,500, and TV commercials from BHD 3,000. Contact us for a detailed quote.' },
+              { q: 'How long does it take to produce a video?', a: 'Social media content can be delivered in 3-5 days, corporate videos in 1-2 weeks, and brand films or commercials in 2-4 weeks. Rush delivery is available.' },
+              { q: 'What equipment do you use?', a: 'We shoot on cinema-grade cameras including Sony FX6 and FX3 in 4K at up to 120fps with 10-bit 4:2:2 color depth, professional lighting, cinema lenses, gimbals, drones, and wireless audio.' },
+              { q: 'Do you provide scriptwriting and creative direction?', a: 'Yes, we offer full pre-production including creative concepts, scriptwriting, storyboarding, location scouting, casting, and production planning.' },
+              { q: 'Can you produce videos for social media?', a: 'Absolutely. We create platform-optimized content for Instagram Reels, TikTok, YouTube, LinkedIn, and more — including vertical formats, captions, and platform-specific editing.' },
+            ].map((faq) => (
+              <details key={faq.q} className="bg-zinc-900/50 border border-white/10 rounded-xl group">
+                <summary className="p-5 cursor-pointer font-display text-white hover:text-film-gold transition-colors list-none flex justify-between items-center">
+                  {faq.q}
+                  <span className="text-film-gold ml-2 group-open:rotate-45 transition-transform text-xl">+</span>
+                </summary>
+                <p className="px-5 pb-5 font-body text-white/60 leading-relaxed">{faq.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
     </ServicePageLayout>

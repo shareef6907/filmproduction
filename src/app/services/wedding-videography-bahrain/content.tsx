@@ -30,6 +30,51 @@ const schemaMarkup = {
       serviceType: 'Wedding Videography',
     },
     {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'How much does wedding videography cost in Bahrain?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Wedding videography in Bahrain starts from BHD 500 for a highlight reel package. Full wedding film packages range from BHD 800-1,500, and premium packages with same-day edits, drone coverage, and multi-camera setups start from BHD 1,500. Contact us for a custom quote.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How far in advance should I book a wedding videographer in Bahrain?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We recommend booking at least 2-3 months before your wedding, especially during peak season (October to April). Popular dates book up quickly, so early booking ensures you secure your preferred videography team.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you film both the ceremony and reception?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes, our wedding packages cover the full day including preparations, ceremony, and reception. We can also cover pre-wedding events like henna nights, engagement parties, and rehearsal dinners as add-on services.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you accommodate cultural and religious wedding traditions?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Absolutely. We have extensive experience filming Arabic, South Asian, Filipino, Western, and multicultural weddings in Bahrain. We understand and respect the traditions, customs, and privacy requirements of every culture.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How long until we receive our wedding video?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Highlight reels are typically delivered within 2-3 weeks. Full wedding films take 4-6 weeks for editing, color grading, and sound design. Premium packages include a same-day edit screened at your reception.',
+          },
+        },
+      ],
+    },
+    {
       '@type': 'VideoObject',
       name: 'Bahrain Wedding Videography Showreel',
       description: 'Cinematic wedding films captured across Bahrain\'s most beautiful venues.',
@@ -150,6 +195,31 @@ export default function WeddingVideographyContent() {
               </p>
             </div>
           </motion.div>
+        </div>
+      </section>
+      {/* FAQ Section */}
+      <section className="py-16 px-4 md:px-12 lg:px-16 border-t border-white/5">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-3xl md:text-4xl text-white mb-8">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {[
+              { q: 'How much does wedding videography cost in Bahrain?', a: 'Highlight reels start from BHD 500. Full wedding films range from BHD 800-1,500. Premium packages with same-day edits, drone, and multi-camera start from BHD 1,500.' },
+              { q: 'How far in advance should I book?', a: 'At least 2-3 months before your wedding, especially during peak season (October to April). Popular dates book up quickly.' },
+              { q: 'Do you film both the ceremony and reception?', a: 'Yes, our packages cover the full day including preparations, ceremony, and reception. Pre-wedding events like henna nights are available as add-ons.' },
+              { q: 'Can you accommodate cultural and religious traditions?', a: 'Absolutely. We have extensive experience with Arabic, South Asian, Filipino, Western, and multicultural weddings in Bahrain.' },
+              { q: 'How long until we receive our wedding video?', a: 'Highlight reels in 2-3 weeks, full films in 4-6 weeks. Premium packages include a same-day edit screened at your reception.' },
+            ].map((faq) => (
+              <details key={faq.q} className="bg-zinc-900/50 border border-white/10 rounded-xl group">
+                <summary className="p-5 cursor-pointer font-display text-white hover:text-film-gold transition-colors list-none flex justify-between items-center">
+                  {faq.q}
+                  <span className="text-film-gold ml-2 group-open:rotate-45 transition-transform text-xl">+</span>
+                </summary>
+                <p className="px-5 pb-5 font-body text-white/60 leading-relaxed">{faq.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
     </ServicePageLayout>
