@@ -30,6 +30,23 @@ const schemaMarkup = {
       serviceType: 'Video Production',
     },
     {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: 'https://filmproductionbahrain.com',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Video Production',
+          item: 'https://filmproductionbahrain.com/services/video-production-bahrain',
+        },
+      ],
+    },
+    {
       '@type': 'FAQPage',
       mainEntity: [
         {
