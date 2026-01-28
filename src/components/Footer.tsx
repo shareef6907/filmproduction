@@ -18,10 +18,20 @@ export default function Footer() {
             className="h-32 w-auto opacity-70"
           />
 
-          {/* Copyright */}
-          <p className="font-body text-sm text-white/40 text-center">
-            © {currentYear} Bahrain Nights. All rights reserved.
-          </p>
+          {/* Social & Copyright */}
+          <div className="flex flex-col items-center gap-3">
+            <a
+              href="https://www.instagram.com/hdvideos"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-body text-sm text-white/60 hover:text-white/90 transition-colors flex items-center gap-2"
+            >
+              <span>📸</span> @hdvideos
+            </a>
+            <p className="font-body text-sm text-white/40 text-center">
+              © {currentYear} Bahrain Nights. All rights reserved.
+            </p>
+          </div>
 
           {/* Location */}
           <p className="font-body text-sm text-white/40">

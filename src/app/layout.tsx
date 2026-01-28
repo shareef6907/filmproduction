@@ -84,6 +84,29 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="manifest" href="/manifest.json" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'ProfessionalService',
+              name: 'Bahrain Nights - Film Production',
+              url: 'https://filmproductionbahrain.com',
+              logo: 'https://filmproductionbahrain.com/logo-white.png',
+              description: "Bahrain's leading film production agency. Premium brand films, commercials, corporate videos, and documentaries.",
+              address: {
+                '@type': 'PostalAddress',
+                addressCountry: 'Bahrain',
+                addressLocality: 'Manama',
+              },
+              sameAs: [
+                'https://www.instagram.com/hdvideos',
+              ],
+              telephone: '+973-3900-7750',
+              areaServed: 'Bahrain',
+            }),
+          }}
+        />
       </head>
       <body className="antialiased">
         {children}
