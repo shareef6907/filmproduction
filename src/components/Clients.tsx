@@ -12,7 +12,6 @@ const clients = [
   { name: 'WEC World Endurance', category: 'Motorsport' },
   { name: 'Linde', category: 'Industry' },
   { name: 'Invest Bank Sharjah', category: 'Banking' },
-  { name: 'Food Group Dubai', category: 'F&B' },
   { name: 'Coca-Cola', category: 'F&B' },
   { name: "Jamie's Italian", category: 'Hospitality' },
   { name: 'Four Seasons', category: 'Hospitality' },
