@@ -7,7 +7,6 @@ import VideoRow from '@/components/VideoRow'
 import VideoModal from '@/components/VideoModal'
 import Services from '@/components/Services'
 import Clients from '@/components/Clients'
-import Packages from '@/components/Packages'
 import Testimonials from '@/components/Testimonials'
 import About from '@/components/About'
 import FAQ from '@/components/FAQ'
@@ -109,9 +108,6 @@ export default function Home() {
 
       {/* Services Section */}
       <Services />
-
-      {/* Pricing Packages - Clear offerings */}
-      <Packages />
 
       {/* Testimonials - Social proof */}
       <Testimonials />
