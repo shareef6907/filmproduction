@@ -6,6 +6,8 @@ const clients = [
   { name: 'Economic Development Board', category: 'Government' },
   { name: 'Ministry of Youth Affairs', category: 'Government' },
   { name: 'Dubai World Trade Centre', category: 'Events' },
+  { name: 'Bahrain International Airshow', category: 'Events' },
+  { name: 'UAE Space Agency', category: 'Government' },
   { name: 'Bahrain International Circuit', category: 'Motorsport' },
   { name: 'WEC World Endurance', category: 'Motorsport' },
   { name: 'Linde', category: 'Industry' },
