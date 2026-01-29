@@ -3,21 +3,27 @@
 import { motion } from 'framer-motion'
 
 const clients = [
-  { name: 'Bahrain Tourism', category: 'Government' },
-  { name: 'Gulf Air', category: 'Aviation' },
-  { name: 'Batelco', category: 'Telecom' },
-  { name: 'ALBA', category: 'Industry' },
-  { name: 'Investcorp', category: 'Finance' },
-  { name: 'Al Salam Bank', category: 'Banking' },
-  { name: 'Formula 1 Bahrain', category: 'Sports' },
-  { name: 'Riffa Views', category: 'Real Estate' },
-  { name: 'The Ritz-Carlton', category: 'Hospitality' },
-  { name: 'Four Seasons', category: 'Hospitality' },
-  { name: 'Al Areen Palace', category: 'Hospitality' },
-  { name: 'Bahrain Intl Circuit', category: 'Events' },
+  { name: 'Economic Development Board', category: 'Government' },
+  { name: 'Ministry of Youth Affairs', category: 'Government' },
+  { name: 'Dubai World Trade Centre', category: 'Events' },
+  { name: 'Bahrain International Circuit', category: 'Motorsport' },
+  { name: 'WEC World Endurance', category: 'Motorsport' },
+  { name: 'Linde', category: 'Industry' },
+  { name: 'Invest Bank Sharjah', category: 'Banking' },
+  { name: 'Food Group Dubai', category: 'F&B' },
+  { name: 'Coca-Cola', category: 'F&B' },
+  { name: "Jamie's Italian", category: 'Hospitality' },
+  { name: 'Audi', category: 'Automotive' },
+  { name: 'Lotus', category: 'Automotive' },
+  { name: 'Jeep', category: 'Automotive' },
+  { name: 'Calvin Klein', category: 'Fashion' },
+  { name: 'Tommy Hilfiger', category: 'Fashion' },
+  { name: 'Aldo', category: 'Fashion' },
+  { name: 'American School of Bahrain', category: 'Education' },
+  { name: "St Christopher's School", category: 'Education' },
 ]
 
-const industries = ['Corporate', 'Government', 'Hospitality', 'Banking & Finance', 'Real Estate', 'Sports & Events', 'Aviation', 'Healthcare', 'Education', 'Technology']
+const industries = ['Government', 'Motorsport', 'Automotive', 'Fashion & Retail', 'Banking & Finance', 'F&B & Hospitality', 'Education', 'Events', 'Industry']
 
 export default function Clients() {
   return (
