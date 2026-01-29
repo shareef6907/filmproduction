@@ -70,7 +70,7 @@ const schemaMarkup = {
           name: 'What equipment do you use for video production?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'We shoot on cinema-grade cameras including Sony FX6 and FX3 in 4K at up to 120fps with 10-bit 4:2:2 color depth. Our kit includes professional lighting, cinema lenses, gimbals, drones, and wireless audio systems for broadcast-quality results.',
+            text: 'We shoot on cinema-grade cameras including Sony FX6 and FX3 in 4K at up to 120fps with 10-bit 4:2:2 color depth. Our kit includes professional lighting, cinema lenses, gimbals, and wireless audio systems for broadcast-quality results.',
           },
         },
         {
@@ -206,7 +206,7 @@ export default function VideoProductionContent() {
             {[
               { q: 'How much does video production cost in Bahrain?', a: 'Social media content starts from BHD 200, corporate videos from BHD 500, brand films from BHD 1,500, and TV commercials from BHD 3,000. Contact us for a detailed quote.' },
               { q: 'How long does it take to produce a video?', a: 'Social media content can be delivered in 3-5 days, corporate videos in 1-2 weeks, and brand films or commercials in 2-4 weeks. Rush delivery is available.' },
-              { q: 'What equipment do you use?', a: 'We shoot on cinema-grade cameras including Sony FX6 and FX3 in 4K at up to 120fps with 10-bit 4:2:2 color depth, professional lighting, cinema lenses, gimbals, drones, and wireless audio.' },
+              { q: 'What equipment do you use?', a: 'We shoot on cinema-grade cameras including Sony FX6 and FX3 in 4K at up to 120fps with 10-bit 4:2:2 color depth, professional lighting, cinema lenses, gimbals, and wireless audio.' },
               { q: 'Do you provide scriptwriting and creative direction?', a: 'Yes, we offer full pre-production including creative concepts, scriptwriting, storyboarding, location scouting, casting, and production planning.' },
               { q: 'Can you produce videos for social media?', a: 'Absolutely. We create platform-optimized content for Instagram Reels, TikTok, YouTube, LinkedIn, and more — including vertical formats, captions, and platform-specific editing.' },
             ].map((faq) => (

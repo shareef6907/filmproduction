@@ -54,7 +54,7 @@ const schemaMarkup = {
           name: 'How much does wedding videography cost in Bahrain?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Wedding videography in Bahrain starts from BHD 500 for a highlight reel package. Full wedding film packages range from BHD 800-1,500, and premium packages with same-day edits, drone coverage, and multi-camera setups start from BHD 1,500. Contact us for a custom quote.',
+            text: 'Wedding videography in Bahrain starts from BHD 500 for a highlight reel package. Full wedding film packages range from BHD 800-1,500, and premium packages with same-day edits and multi-camera setups start from BHD 1,500. Contact us for a custom quote.',
           },
         },
         {
@@ -149,7 +149,7 @@ export default function WeddingVideographyContent() {
                 },
                 {
                   title: 'Premium Package',
-                  features: ['Highlight reel + full film', 'Same-day edit preview', 'Multi-camera coverage', 'Drone aerial shots', 'Behind-the-scenes footage'],
+                  features: ['Highlight reel + full film', 'Same-day edit preview', 'Multi-camera coverage', 'Cinematic slow motion', 'Behind-the-scenes footage'],
                 },
               ].map((pkg, i) => (
                 <motion.div
@@ -222,7 +222,7 @@ export default function WeddingVideographyContent() {
           </h2>
           <div className="space-y-4">
             {[
-              { q: 'How much does wedding videography cost in Bahrain?', a: 'Highlight reels start from BHD 500. Full wedding films range from BHD 800-1,500. Premium packages with same-day edits, drone, and multi-camera start from BHD 1,500.' },
+              { q: 'How much does wedding videography cost in Bahrain?', a: 'Highlight reels start from BHD 500. Full wedding films range from BHD 800-1,500. Premium packages with same-day edits and multi-camera start from BHD 1,500.' },
               { q: 'How far in advance should I book?', a: 'At least 2-3 months before your wedding, especially during peak season (October to April). Popular dates book up quickly.' },
               { q: 'Do you film both the ceremony and reception?', a: 'Yes, our packages cover the full day including preparations, ceremony, and reception. Pre-wedding events like henna nights are available as add-ons.' },
               { q: 'Can you accommodate cultural and religious traditions?', a: 'Absolutely. We have extensive experience with Arabic, South Asian, Filipino, Western, and multicultural weddings in Bahrain.' },

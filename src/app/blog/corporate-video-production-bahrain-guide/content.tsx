@@ -148,7 +148,7 @@ export default function CorporateVideoGuideContent() {
                 'Wireless lavalier microphones and shotgun mics capture crystal-clear audio for interviews and dialogue.',
                 'We direct on-camera talent with care, putting interviewees at ease and coaching for natural delivery.',
                 'B-roll footage is captured: your office, team at work, products, facilities, and Bahrain location shots.',
-                'If your project includes aerial footage, our licensed drone operators capture stunning aerial perspectives of your facilities or Bahrain landmarks.',
+                'For dynamic movement, we use professional gimbals and stabilizers to capture smooth, cinematic shots of your facilities.',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="text-film-gold mt-1.5">▸</span>

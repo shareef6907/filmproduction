@@ -8,7 +8,7 @@ const achievements = [
   { icon: '📽️', title: '900+ Projects', description: 'Successfully delivered' },
   { icon: '🌍', title: 'GCC Coverage', description: 'Regional reach' },
   { icon: '✨', title: '4K Cinema', description: 'Broadcast quality' },
-  { icon: '🚁', title: 'Drone Licensed', description: 'Aerial filming approved' },
+  { icon: '🎨', title: 'Color Grading', description: 'Hollywood-grade finishing' },
 ]
 
 export default function Achievements() {

@@ -33,7 +33,7 @@ const schemaMarkup = {
           name: 'How much does a wedding videographer cost in Bahrain?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Wedding videography in Bahrain ranges from BHD 300-500 for basic coverage (single camera, edited highlight video), BHD 800-1,500 for premium packages (multi-camera, cinematic edit, drone footage), and BHD 2,000+ for luxury cinematic films with same-day edits and multiple deliverables.',
+            text: 'Wedding videography in Bahrain ranges from BHD 300-500 for basic coverage (single camera, edited highlight video), BHD 800-1,500 for premium packages (multi-camera, cinematic edit), and BHD 2,000+ for luxury cinematic films with same-day edits and multiple deliverables.',
           },
         },
         {
@@ -124,7 +124,7 @@ export default function WeddingVideographerContent() {
             </p>
             <div className="grid md:grid-cols-2 gap-4 mb-8">
               {[
-                { style: 'Cinematic', desc: 'Film-like quality with dramatic shots, shallow depth of field, drone aerials, and careful color grading. Tells a story with emotional impact. This is what most couples in Bahrain want today.' },
+                { style: 'Cinematic', desc: 'Film-like quality with dramatic shots, shallow depth of field, smooth gimbal movements, and careful color grading. Tells a story with emotional impact. This is what most couples in Bahrain want today.' },
                 { style: 'Documentary', desc: 'Follows the day as it unfolds with minimal direction. Authentic and natural. Great for couples who want a true record of events without posed setups.' },
                 { style: 'Traditional', desc: 'Straightforward coverage of ceremonies and speeches. Less creative but ensures all important moments are captured. Common for more traditional Bahraini weddings.' },
                 { style: 'Hybrid', desc: 'Combines cinematic and documentary styles. Artistic storytelling with authentic moments. The most popular style for modern Bahrain weddings.' },
@@ -145,7 +145,7 @@ export default function WeddingVideographerContent() {
                 'How many weddings have you filmed in Bahrain?',
                 'How many cameras and operators will be at my wedding?',
                 'What equipment do you use? (Cinema cameras vs consumer cameras matters)',
-                'Do you offer drone/aerial footage?',
+                'What camera equipment do you use?',
                 'What\'s your turnaround time for the final edit?',
                 'How many revisions are included?',
                 'Do you have experience with my wedding venue?',
@@ -169,8 +169,8 @@ export default function WeddingVideographerContent() {
             <div className="space-y-4 mb-8">
               {[
                 { tier: 'Essential Coverage', price: 'BHD 300-500', desc: 'Single camera operator, 4-6 hours coverage, edited highlight video (3-5 minutes). Suitable for smaller, intimate weddings.' },
-                { tier: 'Premium Package', price: 'BHD 800-1,500', desc: 'Multi-camera setup (2-3 operators), full day coverage, cinematic highlight film, full ceremony edit, drone footage, and professionally mixed audio.' },
-                { tier: 'Luxury Cinematic Film', price: 'BHD 2,000+', desc: 'Full cinematic production with 3+ cameras, same-day edit, extended highlight film, full ceremony and speeches, drone footage, custom soundtrack, and premium color grading.' },
+                { tier: 'Premium Package', price: 'BHD 800-1,500', desc: 'Multi-camera setup (2-3 operators), full day coverage, cinematic highlight film, full ceremony edit, and professionally mixed audio.' },
+                { tier: 'Luxury Cinematic Film', price: 'BHD 2,000+', desc: 'Full cinematic production with 3+ cameras, same-day edit, extended highlight film, full ceremony and speeches, custom soundtrack, and premium color grading.' },
               ].map((item) => (
                 <div key={item.tier} className="bg-zinc-900/50 border border-white/10 rounded-xl p-6">
                   <div className="flex justify-between items-start mb-2">

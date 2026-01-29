@@ -23,7 +23,7 @@ const packages = [
     name: 'Premium',
     description: 'For high-end productions and campaigns',
     price: 'Custom Quote',
-    features: ['Multi-day production', 'Multi-camera cinema setup', 'Full crew (Director, DP, Audio)', 'Advanced color grading', 'Motion graphics & VFX', 'Aerial drone footage', 'Cinema-grade delivery', 'Multiple format exports', 'Unlimited revisions', 'Dedicated project manager'],
+    features: ['Multi-day production', 'Multi-camera cinema setup', 'Full crew (Director, DP, Audio)', 'Advanced color grading', 'Motion graphics & VFX', 'Cinematic stabilized footage', 'Cinema-grade delivery', 'Multiple format exports', 'Unlimited revisions', 'Dedicated project manager'],
     popular: false,
     cta: 'Contact Us',
   },

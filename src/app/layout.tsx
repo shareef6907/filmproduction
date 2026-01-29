@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     'event videography bahrain',
     'wedding videographer bahrain',
     'wedding videography bahrain',
-    'drone filming bahrain',
-    'aerial video bahrain',
+    'cinematic video bahrain',
+    'gimbal footage bahrain',
     'tvc production bahrain',
     'tv commercial bahrain',
     'animation bahrain',
@@ -117,10 +117,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Do you offer drone/aerial filming in Bahrain?',
+      name: 'Do you provide color grading services?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes! We are licensed for aerial drone filming in Bahrain. Our team holds the necessary permits and insurance to operate drones legally.',
+        text: 'Yes! We offer professional color grading with Hollywood-grade tools. Our colorists use DaVinci Resolve to create cinematic looks that elevate your footage to broadcast and cinema quality.',
       },
     },
     {
@@ -244,8 +244,8 @@ const localBusinessSchema = {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Drone & Aerial Filming',
-          description: 'Licensed drone filming in Bahrain',
+          name: 'Color Grading & Post-Production',
+          description: 'Professional color grading and editing services',
         },
       },
     ],

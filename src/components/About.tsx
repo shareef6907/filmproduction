@@ -7,7 +7,7 @@ const milestones = [
   { year: '2016', event: 'First international production' },
   { year: '2018', event: 'Expanded to GCC markets' },
   { year: '2020', event: '500+ projects milestone' },
-  { year: '2022', event: 'Drone filming license obtained' },
+  { year: '2022', event: 'Cinema-grade equipment upgrade' },
   { year: '2024', event: '900+ projects delivered' },
 ]
 
@@ -121,7 +121,7 @@ export default function About() {
             <div className="mt-6 flex flex-wrap gap-3">
               {[
                 'Licensed in Bahrain',
-                'Drone Certified',
+                '4K Cinema',
                 'Broadcast Quality',
                 'GCC Coverage',
               ].map((badge) => (
