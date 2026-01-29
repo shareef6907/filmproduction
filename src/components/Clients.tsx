@@ -11,6 +11,7 @@ const clients = [
   { name: 'Bahrain International Circuit', category: 'Motorsport' },
   { name: 'WEC World Endurance', category: 'Motorsport' },
   { name: 'Linde', category: 'Industry' },
+  { name: 'Kuwait Petroleum Corporation', category: 'Energy' },
   { name: 'Invest Bank Sharjah', category: 'Banking' },
   { name: 'Coca-Cola', category: 'F&B' },
   { name: "Jamie's Italian", category: 'Hospitality' },
