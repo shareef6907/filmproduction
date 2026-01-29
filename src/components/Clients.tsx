@@ -13,6 +13,7 @@ const clients = [
   { name: 'Food Group Dubai', category: 'F&B' },
   { name: 'Coca-Cola', category: 'F&B' },
   { name: "Jamie's Italian", category: 'Hospitality' },
+  { name: 'Four Seasons', category: 'Hospitality' },
   { name: 'Audi', category: 'Automotive' },
   { name: 'Lotus', category: 'Automotive' },
   { name: 'Jeep', category: 'Automotive' },
