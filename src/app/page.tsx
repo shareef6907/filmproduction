@@ -12,6 +12,7 @@ import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import { VideoData } from '@/types/video'
+import { isMobile, getYouTubeUrl } from '@/lib/utils'
 
 interface Video {
   id: string
@@ -67,6 +68,12 @@ export default function Home() {
   }, [])
 
   const handleVideoClick = (video: Video, short: boolean = false) => {
+    // On mobile, open YouTube directly for instant playback
+    if (isMobile()) {
+      window.open(getYouTubeUrl(video.id, short), '_blank', 'noopener,noreferrer')
+      return
+    }
+    // On desktop, use the modal
     setSelectedVideo(video)
     setIsShort(short)
   }
