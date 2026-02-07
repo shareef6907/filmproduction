@@ -9,6 +9,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: 'https://filmproductionbahrain.com/portfolio',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://filmproductionbahrain.com/services',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: 'https://filmproductionbahrain.com/services/video-production-bahrain',
       lastModified: new Date(),
       changeFrequency: 'monthly',
