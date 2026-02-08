@@ -1,99 +1,145 @@
-import type { Metadata } from 'next'
+import { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Video Production Blog & Guides | Film Production Bahrain',
-  description: 'Expert guides on corporate video, wedding videography, and professional video production in Bahrain. Tips and insights from Bahrain Nights.',
-  alternates: {
-    canonical: 'https://filmproductionbahrain.com/blog',
-  },
+  title: 'Video Production Blog | Tips, Guides & Industry Insights',
+  description: 'Expert insights on video production in Bahrain. Tips, guides, and industry knowledge for businesses and brands looking to leverage video content.',
   openGraph: {
-    title: 'Video Production Blog & Guides | Film Production Bahrain',
-    description: 'Expert guides on corporate video, wedding videography, and professional video production in Bahrain.',
+    title: 'Video Production Blog | Film Production Bahrain',
+    description: 'Expert insights on video production in Bahrain. Tips, guides, and industry knowledge.',
     url: 'https://filmproductionbahrain.com/blog',
     type: 'website',
+  },
+  alternates: {
+    canonical: 'https://filmproductionbahrain.com/blog',
   },
 }
 
 const blogPosts = [
   {
-    slug: 'corporate-video-production-bahrain-guide',
-    title: 'Corporate Video Production in Bahrain: What to Expect',
-    excerpt: 'A complete guide to the corporate video production process in Bahrain — from pre-production planning to final delivery.',
-    date: '2025-01-28',
+    slug: 'video-production-costs-bahrain-2026',
+    title: 'Video Production Costs in Bahrain: What to Expect in 2026',
+    description: 'A comprehensive guide to video production pricing in Bahrain. Understand costs for different video types and learn what factors affect your production budget.',
+    date: '2025-01-15',
     readTime: '8 min read',
+    category: 'Industry Guide',
   },
   {
-    slug: 'how-to-choose-wedding-videographer-bahrain',
-    title: 'How to Choose a Wedding Videographer in Bahrain',
-    excerpt: 'Everything you need to know about finding the perfect wedding videographer in Bahrain — what to look for, questions to ask, and what to expect.',
-    date: '2025-01-27',
+    slug: 'why-restaurants-need-promo-video',
+    title: 'Why Every Restaurant in Bahrain Needs a Professional Promo Video',
+    description: 'Discover how professional video content can transform your restaurant marketing, increase bookings, and build a loyal customer base in Bahrain\'s competitive dining scene.',
+    date: '2025-01-10',
     readTime: '7 min read',
+    category: 'Marketing',
   },
   {
-    slug: 'why-business-needs-video-bahrain',
-    title: 'Why Every Business in Bahrain Needs Professional Video Content',
-    excerpt: 'Discover why video content is essential for businesses in Bahrain and how professional video production drives growth, engagement, and sales.',
-    date: '2025-01-26',
-    readTime: '7 min read',
+    slug: 'corporate-video-production-guide',
+    title: 'Corporate Video Production: The Complete Guide for Bahrain Businesses',
+    description: 'Everything you need to know about creating effective corporate videos. Types, planning, production process, and maximizing ROI from your video investment.',
+    date: '2025-01-05',
+    readTime: '10 min read',
+    category: 'Corporate',
   },
 ]
 
-export default function BlogPage() {
+export default function BlogIndex() {
   return (
     <main className="min-h-screen bg-film-black">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-film-black/80 backdrop-blur-md border-b border-white/5">
-        <div className="max-w-6xl mx-auto px-4 md:px-12 lg:px-16 py-4 flex items-center justify-between">
-          <Link href="/">
-            <span className="font-bold text-xl text-white">Bahrain Nights</span>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-film-black/90 backdrop-blur-md border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          <Link href="/" className="font-display text-xl text-white hover:text-film-gold transition-colors">
+            Film Production <span className="text-film-gold">Bahrain</span>
           </Link>
           <div className="flex items-center gap-6">
-            <Link href="/#work" className="font-body text-sm text-white/60 hover:text-white transition-colors hidden md:block">Our Work</Link>
-            <Link href="/#services" className="font-body text-sm text-white/60 hover:text-white transition-colors hidden md:block">Services</Link>
-            <Link href="/blog" className="font-body text-sm text-white hover:text-white transition-colors hidden md:block">Blog</Link>
-            <a href="https://wa.me/97339007750" target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white px-4 py-2 rounded-lg font-body text-sm font-medium hover:bg-[#20bd5a] transition-all">
-              WhatsApp Us
-            </a>
+            <Link href="/#services" className="text-film-light/70 hover:text-white text-sm hidden md:block">
+              Services
+            </Link>
+            <Link href="/#work" className="text-film-light/70 hover:text-white text-sm hidden md:block">
+              Our Work
+            </Link>
+            <Link
+              href="https://wa.me/97339007750"
+              target="_blank"
+              className="btn-primary text-sm py-2 px-4"
+            >
+              Get Quote
+            </Link>
           </div>
         </div>
       </nav>
 
-      <section className="pt-32 pb-16 px-4 md:px-12 lg:px-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-film-gold font-body text-sm tracking-widest uppercase mb-4">Our Blog</p>
-          <h1 className="font-display text-4xl md:text-6xl font-medium text-white mb-6">
-            Video Production Guides
+      {/* Header */}
+      <section className="pt-32 pb-16 bg-gradient-to-b from-film-dark to-film-black">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <p className="heading-display text-film-gold text-sm tracking-[0.3em] mb-4">
+            Insights & Guides
+          </p>
+          <h1 className="font-display text-4xl md:text-5xl text-white mb-6">
+            Video Production Blog
           </h1>
-          <p className="font-body text-lg text-white/60 max-w-2xl mx-auto">
-            Expert advice and insights on video production, filmmaking, and visual storytelling in Bahrain.
+          <p className="text-film-light/70 max-w-2xl mx-auto">
+            Expert insights, tips, and guides on video production in Bahrain. 
+            Learn how to leverage video content for your business.
           </p>
         </div>
       </section>
 
-      <section className="px-4 md:px-12 lg:px-16 pb-20">
-        <div className="max-w-4xl mx-auto space-y-6">
-          {blogPosts.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="block bg-zinc-900/50 border border-white/10 hover:border-film-gold/50 rounded-xl p-8 transition-colors duration-300 group"
-            >
-              <div className="flex items-center gap-3 text-sm text-white/40 mb-3">
-                <time dateTime={post.date}>
-                  {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-                </time>
-                <span>•</span>
-                <span>{post.readTime}</span>
-              </div>
-              <h2 className="font-display text-2xl md:text-3xl text-white group-hover:text-film-gold transition-colors mb-3">
-                {post.title}
-              </h2>
-              <p className="font-body text-white/60">{post.excerpt}</p>
-              <span className="inline-block mt-4 font-body text-film-gold font-medium">Read More →</span>
+      {/* Blog Posts Grid */}
+      <section className="py-16">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid gap-8">
+            {blogPosts.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group block bg-film-gray/30 rounded-xl border border-white/5 overflow-hidden hover:border-film-gold/30 transition-all duration-300"
+              >
+                <div className="p-8">
+                  <div className="flex items-center gap-4 mb-4 text-sm">
+                    <span className="text-film-gold">{post.category}</span>
+                    <span className="text-film-light/40">•</span>
+                    <span className="text-film-light/40">{post.date}</span>
+                    <span className="text-film-light/40">•</span>
+                    <span className="text-film-light/40">{post.readTime}</span>
+                  </div>
+                  <h2 className="font-display text-2xl md:text-3xl text-white mb-4 group-hover:text-film-gold transition-colors">
+                    {post.title}
+                  </h2>
+                  <p className="text-film-light/60 leading-relaxed mb-4">
+                    {post.description}
+                  </p>
+                  <span className="inline-flex items-center text-film-gold font-medium group-hover:gap-3 gap-2 transition-all">
+                    Read Article
+                    <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-film-dark">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="font-display text-3xl text-white mb-6">
+            Ready to Create Your Video?
+          </h2>
+          <p className="text-film-light/70 mb-8">
+            Get in touch to discuss your project and receive a customized quote.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="https://wa.me/97339007750" target="_blank" className="btn-primary btn-glow">
+              WhatsApp Us
             </Link>
-          ))}
+            <Link href="/#contact" className="btn-secondary">
+              Contact Page
+            </Link>
+          </div>
         </div>
       </section>
 
