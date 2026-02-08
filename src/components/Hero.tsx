@@ -1,165 +1,96 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+import { useEffect, useRef } from 'react'
+import Link from 'next/link'
 
 interface HeroProps {
   headerVideo?: string
 }
 
-export default function Hero({ headerVideo = '/header-video.mp4' }: HeroProps) {
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-  }
+export default function Hero({ headerVideo }: HeroProps) {
+  const videoRef = useRef<HTMLVideoElement>(null)
 
-  const scrollToWork = () => {
-    document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })
-  }
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {
+        // Autoplay might be blocked
+      })
+    }
+  }, [])
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Video Background */}
-      <div className="absolute inset-0 z-0">
+      {/* Video Background or Gradient Animation */}
+      {headerVideo ? (
         <video
+          ref={videoRef}
           autoPlay
-          muted
           loop
+          muted
           playsInline
-          preload="auto"
-          className="w-full h-full object-cover"
-          poster="/poster.jpg"
-          key={headerVideo}
+          className="absolute inset-0 w-full h-full object-cover"
         >
           <source src={headerVideo} type="video/mp4" />
         </video>
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/50" />
-        {/* Bottom Gradient */}
-        <div className="absolute bottom-0 left-0 right-0 h-64 gradient-bottom" />
-        {/* Top Gradient for nav area */}
-        <div className="absolute top-0 left-0 right-0 h-32 gradient-top" />
-      </div>
-
-      {/* Navigation */}
-      <nav className="absolute top-0 left-0 right-0 z-30 px-4 md:px-12 lg:px-16 py-6">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <Image
-              src="/logo-white.png"
-              alt="Bahrain Nights - Film Production"
-              width={440}
-              height={120}
-              className="h-24 md:h-32 w-auto"
-              priority
-            />
-          </motion.div>
-
-          {/* Nav Links - Desktop */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="hidden md:flex items-center gap-8"
-          >
-            <button 
-              onClick={scrollToWork}
-              className="text-white/80 hover:text-white font-body text-sm tracking-wide transition-colors"
-            >
-              Our Work
-            </button>
-            <a 
-              href="#services"
-              className="text-white/80 hover:text-white font-body text-sm tracking-wide transition-colors"
-            >
-              Services
-            </a>
-            <button
-              onClick={scrollToContact}
-              className="btn-glow bg-white text-film-black px-6 py-2.5 rounded font-body text-sm font-medium hover:bg-white/90 transition-colors"
-            >
-              Get in Touch
-            </button>
-          </motion.div>
-
-          {/* Mobile Menu Button */}
-          <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            onClick={scrollToContact}
-            className="md:hidden btn-glow bg-white text-film-black px-4 py-2 rounded font-body text-sm font-medium"
-          >
-            Contact
-          </motion.button>
+      ) : (
+        <div className="absolute inset-0 bg-gradient-to-br from-film-black via-film-dark to-film-black">
+          {/* Animated gradient orbs */}
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-film-gold/5 rounded-full blur-3xl animate-pulse-slow" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-film-gold/5 rounded-full blur-3xl animate-pulse-slow delay-1000" />
         </div>
-      </nav>
-
-      {/* Hero Content */}
-      <div className="relative z-20 h-full flex flex-col justify-end pb-24 md:pb-32 px-4 md:px-12 lg:px-16">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="max-w-3xl"
-        >
-          {/* Tagline */}
-          <p className="text-film-gold font-body text-sm md:text-base tracking-widest uppercase mb-4">
-            Bahrain's Leading Production Agency
+      )}
+      
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-film-black via-film-black/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-film-black/80 via-transparent to-film-black/80" />
+      
+      {/* Content */}
+      <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-6">
+        <div className="max-w-5xl mx-auto animate-fade-in-up">
+          {/* Pre-title */}
+          <p className="heading-display text-film-gold text-sm md:text-base tracking-[0.3em] mb-6">
+            Cinematic Group
           </p>
           
-          {/* Main Headline */}
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-medium text-white leading-tight mb-6">
-            Cinematic Stories,
-            <br />
-            <span className="text-gradient">Crafted with Precision</span>
+          {/* Main Title */}
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-tight">
+            Film Production <span className="gold-text">Bahrain</span>
           </h1>
-
-          {/* Subheadline */}
-          <p className="font-body text-lg md:text-xl text-white/70 max-w-xl mb-8">
-            Premium film production for brands, businesses, and visionaries. 
-            Over a decade of bringing visions to life.
+          
+          {/* Subtitle */}
+          <p className="text-xl md:text-2xl text-film-light/80 max-w-3xl mx-auto mb-10 font-light">
+            Commercial-Grade Video Production for Brands That Demand More
           </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-4">
-            <button
-              onClick={scrollToContact}
-              className="btn-glow bg-white text-film-black px-8 py-3.5 rounded font-body font-medium hover:bg-white/90 transition-all"
+          
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link 
+              href="#work" 
+              className="btn-primary btn-glow inline-flex items-center gap-2"
             >
-              Start a Project
-            </button>
-            <button
-              onClick={scrollToWork}
-              className="border border-white/30 text-white px-8 py-3.5 rounded font-body font-medium hover:bg-white/10 hover:border-white/50 transition-all"
-            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+              </svg>
               View Our Work
-            </button>
+            </Link>
+            <Link 
+              href="#contact" 
+              className="btn-secondary inline-flex items-center gap-2"
+            >
+              Get a Quote
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
           </div>
-        </motion.div>
-
+        </div>
+        
         {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 0.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="flex flex-col items-center gap-2 text-white/50"
-          >
-            <span className="text-xs font-body tracking-wider">SCROLL</span>
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </motion.div>
-        </motion.div>
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+          <svg className="w-6 h-6 text-film-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </div>
       </div>
     </section>
   )

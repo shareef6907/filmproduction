@@ -5,10 +5,10 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp'
 export const metadata: Metadata = {
   metadataBase: new URL('https://filmproductionbahrain.com'),
   title: {
-    default: 'Film Production Bahrain | Award-Winning Video Production Company | Bahrain Nights',
+    default: 'Film Production Bahrain | Commercial-Grade Video Production',
     template: '%s | Film Production Bahrain'
   },
-  description: 'Bahrain\'s leading award-winning film production company. Premium brand films, commercials, corporate videos, documentaries, wedding videography & event coverage. 10+ years experience, 900+ projects delivered. Get a free quote today.',
+  description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, drone videography, wedding films & more. Part of the Cinematic Group. WhatsApp: +973 3900 7750',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -20,53 +20,42 @@ export const metadata: Metadata = {
     'film production bahrain',
     'video production bahrain',
     'video production company bahrain',
-    'commercial filming bahrain',
-    'corporate video bahrain',
+    'commercial production bahrain',
     'corporate video production bahrain',
-    'brand films bahrain',
-    'documentary production bahrain',
     'event videography bahrain',
-    'wedding videographer bahrain',
     'wedding videography bahrain',
-    'cinematic video bahrain',
-    'gimbal footage bahrain',
-    'tvc production bahrain',
-    'tv commercial bahrain',
-    'animation bahrain',
-    'motion graphics bahrain',
-    'podcast filming bahrain',
-    'live streaming bahrain',
-    'bahrain nights production',
-    'cinema production middle east',
+    'drone videography bahrain',
+    'music video production bahrain',
+    'real estate video bahrain',
+    'restaurant video production bahrain',
+    'cinematic group',
     'professional videography bahrain',
-    'best video production bahrain',
-    'cheap video production bahrain',
-    'video editing bahrain',
-    'color grading bahrain',
+    'tv commercial bahrain',
+    'brand films bahrain',
   ],
-  authors: [{ name: 'Bahrain Nights' }],
-  creator: 'Bahrain Nights',
-  publisher: 'Bahrain Nights',
+  authors: [{ name: 'Cinematic Group' }],
+  creator: 'Cinematic Group',
+  publisher: 'Cinematic Group',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://filmproductionbahrain.com',
     siteName: 'Film Production Bahrain',
-    title: 'Film Production Bahrain | Award-Winning Video Production | Bahrain Nights',
-    description: 'Bahrain\'s leading award-winning film production company. Premium brand films, commercials, corporate videos, documentaries & wedding videography. 10+ years experience.',
+    title: 'Film Production Bahrain | Commercial-Grade Video Production',
+    description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, drone videography, wedding films & more.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Film Production Bahrain - Bahrain Nights',
+        alt: 'Film Production Bahrain - Cinematic Group',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Film Production Bahrain | Award-Winning Video Production',
-    description: 'Bahrain\'s leading film production agency. Premium brand films, commercials, corporate videos, and documentaries.',
+    title: 'Film Production Bahrain | Commercial-Grade Video Production',
+    description: 'Commercial-grade video production for brands that demand more. Part of the Cinematic Group.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -83,9 +72,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://filmproductionbahrain.com',
   },
-  verification: {
-    google: 'verification_token',
-  },
 }
 
 export const viewport: Viewport = {
@@ -95,65 +81,16 @@ export const viewport: Viewport = {
   maximumScale: 5,
 }
 
-// FAQ Schema for SEO
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'How long does a typical video production project take?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Project timelines vary based on complexity. A simple corporate video might take 2-3 weeks from concept to delivery, while a commercial or documentary can take 4-8 weeks.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is included in your video production services?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Our full-service packages include pre-production (concept development, scripting, storyboarding), production (filming with professional crew and equipment), and post-production (editing, color grading, sound design, and final delivery).',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do you provide color grading services?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes! We offer professional color grading with Hollywood-grade tools. Our colorists use DaVinci Resolve to create cinematic looks that elevate your footage to broadcast and cinema quality.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How much does video production cost in Bahrain?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Costs depend on project scope, duration, and complexity. Our packages start from BD 500 for simple projects and scale up for larger productions.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What video formats do you deliver?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We deliver in all standard formats including 4K, HD, and social media-optimized versions for YouTube, Instagram, LinkedIn, and TikTok.',
-      },
-    },
-  ],
-}
-
-// Local Business Schema
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': ['LocalBusiness', 'VideoProductionCompany'],
   '@id': 'https://filmproductionbahrain.com',
-  name: 'Bahrain Nights - Film Production',
-  alternateName: 'Film Production Bahrain',
+  name: 'Film Production Bahrain',
+  alternateName: 'Cinematic Group - Film Production',
   url: 'https://filmproductionbahrain.com',
   logo: 'https://filmproductionbahrain.com/logo-white.png',
   image: 'https://filmproductionbahrain.com/og-image.jpg',
-  description: "Bahrain's leading award-winning film production company. Premium brand films, commercials, corporate videos, documentaries, and event coverage. 10+ years of cinematic excellence.",
+  description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, drone videography, wedding films & more.',
   address: {
     '@type': 'PostalAddress',
     addressCountry: 'BH',
@@ -166,42 +103,25 @@ const localBusinessSchema = {
     longitude: 50.5876,
   },
   telephone: '+973-3900-7750',
-  email: 'ceo@bahrainnights.com',
-  priceRange: 'BD 500 - BD 5000+',
+  email: 'hello@filmproductionbahrain.com',
+  priceRange: 'BD 300 - BD 10000+',
   openingHours: 'Mo-Sa 09:00-18:00',
   sameAs: [
     'https://www.instagram.com/hdvideos',
+    'https://cinematicwebworks.com',
+    'https://bahrainnights.com',
   ],
   areaServed: [
-    {
-      '@type': 'Country',
-      name: 'Bahrain',
-    },
-    {
-      '@type': 'Country',
-      name: 'Saudi Arabia',
-    },
-    {
-      '@type': 'Country',
-      name: 'United Arab Emirates',
-    },
-    {
-      '@type': 'Country',
-      name: 'Qatar',
-    },
-    {
-      '@type': 'Country',
-      name: 'Kuwait',
-    },
-    {
-      '@type': 'Country',
-      name: 'Oman',
-    },
+    { '@type': 'Country', name: 'Bahrain' },
+    { '@type': 'Country', name: 'Saudi Arabia' },
+    { '@type': 'Country', name: 'United Arab Emirates' },
+    { '@type': 'Country', name: 'Qatar' },
+    { '@type': 'Country', name: 'Kuwait' },
   ],
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
-    reviewCount: '50',
+    reviewCount: '75',
     bestRating: '5',
     worstRating: '1',
   },
@@ -209,97 +129,33 @@ const localBusinessSchema = {
     '@type': 'OfferCatalog',
     name: 'Video Production Services',
     itemListElement: [
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Corporate Video Production',
-          description: 'Professional corporate videos for businesses in Bahrain',
-        },
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Commercial & TVC Production',
-          description: 'TV commercials and advertising videos',
-        },
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Wedding Videography',
-          description: 'Cinematic wedding films in Bahrain',
-        },
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Documentary Production',
-          description: 'Documentary filmmaking services',
-        },
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Color Grading & Post-Production',
-          description: 'Professional color grading and editing services',
-        },
-      },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Corporate Video Production' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Production' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Event Videography' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Drone Videography' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Music Video Production' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Real Estate Video Tours' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Restaurant Video Production' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Wedding Videography' } },
     ],
   },
 }
 
-// Video Production Service Schema
-const serviceSchema = {
+const organizationSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Service',
-  serviceType: 'Video Production',
-  provider: {
-    '@type': 'LocalBusiness',
-    name: 'Bahrain Nights',
-    url: 'https://filmproductionbahrain.com',
-  },
-  areaServed: 'Bahrain',
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Video Production Packages',
-    itemListElement: [
-      {
-        '@type': 'OfferCatalog',
-        name: 'Essential Package',
-        itemListElement: [
-          {
-            '@type': 'Offer',
-            priceSpecification: {
-              '@type': 'PriceSpecification',
-              price: '500',
-              priceCurrency: 'BHD',
-              minPrice: '500',
-            },
-          },
-        ],
-      },
-      {
-        '@type': 'OfferCatalog',
-        name: 'Professional Package',
-        itemListElement: [
-          {
-            '@type': 'Offer',
-            priceSpecification: {
-              '@type': 'PriceSpecification',
-              price: '1500',
-              priceCurrency: 'BHD',
-              minPrice: '1500',
-            },
-          },
-        ],
-      },
-    ],
-  },
+  '@type': 'Organization',
+  name: 'Cinematic Group',
+  url: 'https://filmproductionbahrain.com',
+  logo: 'https://filmproductionbahrain.com/logo-white.png',
+  sameAs: [
+    'https://cinematicwebworks.com',
+    'https://bahrainnights.com',
+    'https://www.instagram.com/hdvideos',
+  ],
+  member: [
+    { '@type': 'Organization', name: 'Cinematic Web Works', url: 'https://cinematicwebworks.com' },
+    { '@type': 'Organization', name: 'Bahrain Nights', url: 'https://bahrainnights.com' },
+  ],
 }
 
 export default function RootLayout({
@@ -322,17 +178,12 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(serviceSchema),
+            __html: JSON.stringify(organizationSchema),
           }}
         />
       </head>
       <body className="antialiased">
+        <div className="film-grain" aria-hidden="true" />
         {children}
         <FloatingWhatsApp />
       </body>

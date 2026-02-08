@@ -6,9 +6,8 @@ import Achievements from '@/components/Achievements'
 import VideoRow from '@/components/VideoRow'
 import VideoModal from '@/components/VideoModal'
 import Services from '@/components/Services'
-import Clients from '@/components/Clients'
-import About from '@/components/About'
-import FAQ from '@/components/FAQ'
+import Showreel from '@/components/Showreel'
+import CinematicGroup from '@/components/CinematicGroup'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import { VideoData } from '@/types/video'
@@ -19,7 +18,6 @@ interface Video {
   title: string
 }
 
-// Fallback data in case API fails - descriptive titles for better portfolio presentation
 const fallbackData: VideoData = {
   mainVideos: [
     { id: 'ne15w87EA4Q', title: 'Luxury Resort | Brand Film', order: 1 },
@@ -68,12 +66,10 @@ export default function Home() {
   }, [])
 
   const handleVideoClick = (video: Video, short: boolean = false) => {
-    // On mobile, open YouTube directly for instant playback
     if (isMobile()) {
       window.open(getYouTubeUrl(video.id, short), '_blank', 'noopener,noreferrer')
       return
     }
-    // On desktop, use the modal
     setSelectedVideo(video)
     setIsShort(short)
   }
@@ -91,10 +87,10 @@ export default function Home() {
       {/* Hero Section */}
       <Hero headerVideo={videoData.headerVideo} />
 
-      {/* Achievement Banner - Trust signals right after hero */}
+      {/* Achievement Banner */}
       <Achievements />
 
-      {/* Video Portfolio Sections */}
+      {/* Video Portfolio */}
       <section id="work" className="pt-8 pb-16">
         <VideoRow
           title="Our Work"
@@ -109,17 +105,14 @@ export default function Home() {
         />
       </section>
 
-      {/* Client Logos - Social proof */}
-      <Clients />
-
       {/* Services Section */}
       <Services />
 
-      {/* About Section */}
-      <About />
+      {/* Showreel Section */}
+      <Showreel />
 
-      {/* FAQ - SEO boost and user help */}
-      <FAQ />
+      {/* Cinematic Group Section */}
+      <CinematicGroup />
 
       {/* Contact Section */}
       <Contact />
