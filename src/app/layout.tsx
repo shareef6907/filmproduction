@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import FloatingWhatsApp from '@/components/FloatingWhatsApp'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://filmproductionbahrain.com'),
@@ -333,6 +334,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         {children}
+        <FloatingWhatsApp />
       </body>
     </html>
   )
