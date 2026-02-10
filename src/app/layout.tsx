@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import FloatingWhatsApp from '@/components/FloatingWhatsApp'
+import { GoogleAnalytics } from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://filmproductionbahrain.com'),
@@ -183,6 +184,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
+        <GoogleAnalytics />
         <div className="film-grain" aria-hidden="true" />
         {children}
         <FloatingWhatsApp />
