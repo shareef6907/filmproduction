@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 
 interface HeroProps {
@@ -9,14 +9,25 @@ interface HeroProps {
 
 export default function Hero({ headerVideo }: HeroProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false)
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch(() => {
-        // Autoplay might be blocked
-      })
-    }
-  }, [])
+    // Lazy load video after initial render for better LCP
+    const timer = setTimeout(() => {
+      if (videoRef.current && headerVideo) {
+        const source = videoRef.current.querySelector('source')
+        if (source && source.dataset.src) {
+          source.src = source.dataset.src
+          videoRef.current.load()
+          videoRef.current.play().catch(() => {
+            // Autoplay might be blocked
+          })
+          setIsVideoLoaded(true)
+        }
+      }
+    }, 100)
+    return () => clearTimeout(timer)
+  }, [headerVideo])
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -24,13 +35,14 @@ export default function Hero({ headerVideo }: HeroProps) {
       {headerVideo ? (
         <video
           ref={videoRef}
-          autoPlay
           loop
           muted
           playsInline
+          preload="none"
+          poster="/header-video-poster.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src={headerVideo} type="video/mp4" />
+          <source data-src={headerVideo} type="video/mp4" />
         </video>
       ) : (
         <div className="absolute inset-0 bg-gradient-to-br from-film-black via-film-dark to-film-black">
