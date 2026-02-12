@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'How much does wedding videography cost in Bahrain?',
-    answer: 'Wedding videography packages in Bahrain range from BD 800 for basic coverage to BD 3,000+ for premium packages with multiple videographers, drone coverage, and same-day edits. We offer packages for different budgets and requirements.',
+    answer: 'Wedding videography packages in Bahrain range from BD 800 for basic coverage to BD 3,000+ for premium packages with multiple videographers and same-day edits. We offer packages for different budgets and requirements.',
   },
   {
     question: 'How long will it take to receive our wedding video?',
@@ -149,7 +149,7 @@ export default function WeddingVideography() {
         
         <h3>Cinematic Quality</h3>
         <p>
-          We use professional cinema cameras, prime lenses, gimbals, and drones to capture 
+          We use professional cinema cameras, prime lenses, and gimbals to capture 
           your wedding with the production values of a feature film. Every shot is carefully 
           composed, every movement smooth, every frame beautiful.
         </p>
@@ -193,7 +193,7 @@ export default function WeddingVideography() {
           <li>Full day coverage (10+ hours)</li>
           <li>8-10 minute highlight film</li>
           <li>Ceremony and speeches edits</li>
-          <li>Drone coverage</li>
+          <li>Cinematic crane shots</li>
           <li>USB delivery in keepsake box</li>
         </ul>
 
@@ -204,7 +204,7 @@ export default function WeddingVideography() {
           <li>Extended highlight film</li>
           <li>Same-day edit</li>
           <li>Engagement session</li>
-          <li>Drone and specialty shots</li>
+          <li>Specialty cinematic shots</li>
           <li>Raw footage delivery</li>
         </ul>
 

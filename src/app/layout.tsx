@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: 'Film Production Bahrain | Commercial-Grade Video Production',
     template: '%s | Film Production Bahrain'
   },
-  description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, drone videography, wedding films & more. Part of the Cinematic Group. WhatsApp: +973 3900 7750',
+  description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, wedding films & more. Part of the Cinematic Group. WhatsApp: +973 3900 7750',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     'corporate video production bahrain',
     'event videography bahrain',
     'wedding videography bahrain',
-    'drone videography bahrain',
+    'cinematic video bahrain',
     'music video production bahrain',
     'real estate video bahrain',
     'restaurant video production bahrain',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url: 'https://filmproductionbahrain.com',
     siteName: 'Film Production Bahrain',
     title: 'Film Production Bahrain | Commercial-Grade Video Production',
-    description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, drone videography, wedding films & more.',
+    description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, wedding films & more.',
     images: [
       {
         url: '/og-image.jpg',
@@ -91,7 +91,7 @@ const localBusinessSchema = {
   url: 'https://filmproductionbahrain.com',
   logo: 'https://filmproductionbahrain.com/logo-white.png',
   image: 'https://filmproductionbahrain.com/og-image.jpg',
-  description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, drone videography, wedding films & more.',
+  description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, wedding films & more.',
   address: {
     '@type': 'PostalAddress',
     addressCountry: 'BH',
@@ -133,7 +133,6 @@ const localBusinessSchema = {
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Corporate Video Production' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Production' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Event Videography' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Drone Videography' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Music Video Production' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Real Estate Video Tours' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Restaurant Video Production' } },

@@ -6,7 +6,6 @@ const services = [
   { name: 'Corporate Video', href: '/corporate-video-production' },
   { name: 'Commercial Production', href: '/commercial-production' },
   { name: 'Event Videography', href: '/event-videography' },
-  { name: 'Drone Videography', href: '/drone-videography' },
   { name: 'Music Videos', href: '/music-video-production' },
   { name: 'Real Estate Tours', href: '/real-estate-video-tours' },
   { name: 'Restaurant Videos', href: '/food-and-restaurant-video' },

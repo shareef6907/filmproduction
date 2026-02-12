@@ -25,7 +25,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'corporate-video-production',
     'commercial-production',
     'event-videography',
-    'drone-videography',
     'music-video-production',
     'real-estate-video-tours',
     'food-and-restaurant-video',

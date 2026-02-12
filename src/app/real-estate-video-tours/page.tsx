@@ -3,7 +3,7 @@ import ServicePageLayout from '@/components/ServicePageLayout'
 
 export const metadata: Metadata = {
   title: 'Real Estate Video Tours Bahrain | Property Walkthroughs & Virtual Tours',
-  description: 'Professional real estate video tours in Bahrain. Property walkthroughs, virtual tours, drone footage, and listing videos that sell properties faster. For agents, developers, and property owners.',
+  description: 'Professional real estate video tours in Bahrain. Property walkthroughs, virtual tours, and listing videos that sell properties faster. For agents, developers, and property owners.',
   keywords: ['real estate video bahrain', 'property video bahrain', 'virtual tour bahrain', 'property walkthrough video', 'real estate videography bahrain'],
   openGraph: {
     title: 'Real Estate Video Tours Bahrain | Film Production Bahrain',
@@ -20,15 +20,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'How much does a real estate video cost in Bahrain?',
-    answer: 'Real estate video packages in Bahrain start from BD 150 for apartments and villas, with premium packages including drone footage starting from BD 300. Large developments and commercial properties are quoted based on scope.',
+    answer: 'Real estate video packages in Bahrain start from BD 150 for apartments and villas, with premium packages starting from BD 300. Large developments and commercial properties are quoted based on scope.',
   },
   {
     question: 'How quickly can you produce a property video?',
     answer: 'Standard turnaround is 3-5 business days. Same-week rush delivery is available for urgent listings. We work with your timeline to ensure videos are ready when you need them.',
-  },
-  {
-    question: 'Do you include drone footage?',
-    answer: 'Drone footage can be added to any package. It is particularly valuable for villas, waterfront properties, and developments where aerial perspective showcases the property and surroundings effectively.',
   },
   {
     question: 'What do I need to prepare before filming?',
@@ -115,12 +111,12 @@ export default function RealEstateVideoTours() {
           premium finishes, is highlighted along the way.
         </p>
 
-        <h3>Aerial Property Tours</h3>
+        <h3>Cinematic Property Tours</h3>
         <p>
-          Drone footage adds a dramatic dimension to property marketing. We capture sweeping 
-          aerial views that show the property in context—its neighborhood, proximity to 
-          amenities, and surrounding landscape. For waterfront properties, estates, and 
-          developments, aerial footage is essential for conveying the full scope and appeal.
+          Professional stabilized footage adds a dramatic dimension to property marketing. We capture 
+          sweeping shots that show the property in context—its neighborhood, proximity to 
+          amenities, and surrounding landscape. Using gimbal and crane techniques, we create 
+          cinematic movements that convey the full scope and appeal of any property.
         </p>
 
         <h3>Development Marketing Videos</h3>
@@ -162,7 +158,7 @@ export default function RealEstateVideoTours() {
         <h3>Premium Package</h3>
         <ul>
           <li>Everything in Standard package</li>
-          <li>Aerial drone footage</li>
+          <li>Cinematic crane shots</li>
           <li>Extended video length</li>
           <li>Neighborhood and amenity shots</li>
           <li>Property information graphics</li>

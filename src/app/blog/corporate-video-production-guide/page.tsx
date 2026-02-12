@@ -222,7 +222,7 @@ export default function CorporateVideoGuide() {
             <ul>
               <li>Interview filming with proper lighting and audio</li>
               <li>B-roll footage of operations, facilities, and products</li>
-              <li>Specialty shots (drone, time-lapse, etc.)</li>
+              <li>Specialty shots (crane, time-lapse, etc.)</li>
               <li>Multiple takes for editing flexibility</li>
             </ul>
             <p>

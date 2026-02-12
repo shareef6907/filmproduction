@@ -182,7 +182,7 @@ export default function VideoProductionCosts() {
             </p>
             <p>
               <strong>Premium Package (BD 1,500 - BD 2,500):</strong> Two videographers, full-day 
-              coverage, extended highlight film, ceremony and speeches edits, and drone footage.
+              coverage, extended highlight film, ceremony and speeches edits, and cinematic coverage.
             </p>
             <p>
               <strong>Luxury Package (BD 3,000 - BD 5,000+):</strong> Multi-videographer team, 
@@ -191,12 +191,8 @@ export default function VideoProductionCosts() {
 
             <h2>Specialty Video Services</h2>
             <p>
-              <strong>Drone Videography:</strong> BD 200 - BD 500 for real estate or short additions 
-              to larger projects. Standalone aerial projects range BD 500 - BD 1,500.
-            </p>
-            <p>
               <strong>Real Estate Videos:</strong> BD 150 - BD 300 for apartments, BD 300 - BD 600 
-              for villas with drone, BD 1,000+ for luxury properties and developments.
+              for villas, BD 1,000+ for luxury properties and developments.
             </p>
             <p>
               <strong>Restaurant/Food Videos:</strong> BD 300 - BD 800 for social media packages, 
@@ -221,7 +217,7 @@ export default function VideoProductionCosts() {
             </p>
             <p>
               <strong>Equipment:</strong> Premium cameras, specialized lenses, lighting rigs, jibs, 
-              dollies, and drones affect rental costs and technical requirements.
+              dollies, and cranes affect rental costs and technical requirements.
             </p>
             <p>
               <strong>Talent:</strong> Professional actors, voice-over artists, and models add 
