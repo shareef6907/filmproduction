@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Real Estate Video Tours Bahrain | Film Production Bahrain',
     description: 'Professional real estate video tours in Bahrain. Property walkthroughs and virtual tours that sell properties faster.',
-    url: 'https://filmproductionbahrain.com/real-estate-video-tours',
+    url: 'https://www.filmproductionbahrain.com/real-estate-video-tours',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/real-estate-video-tours',
+    canonical: 'https://www.filmproductionbahrain.com/real-estate-video-tours',
   },
 }
 
@@ -61,7 +61,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional real estate video tours and property walkthrough services in Bahrain for agents, developers, and property owners.',

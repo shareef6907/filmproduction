@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Educational Video Production Bahrain | Film Production Bahrain',
     description: 'Professional educational video production in Bahrain. E-learning and training content.',
-    url: 'https://filmproductionbahrain.com/educational-video-production',
+    url: 'https://www.filmproductionbahrain.com/educational-video-production',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/educational-video-production',
+    canonical: 'https://www.filmproductionbahrain.com/educational-video-production',
   },
 }
 
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional educational video production services in Bahrain for e-learning, training, and educational institutions.',

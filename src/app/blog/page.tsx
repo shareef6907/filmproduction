@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Video Production Blog | Film Production Bahrain',
     description: 'Expert insights on video production in Bahrain. Tips, guides, and industry knowledge.',
-    url: 'https://filmproductionbahrain.com/blog',
+    url: 'https://www.filmproductionbahrain.com/blog',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/blog',
+    canonical: 'https://www.filmproductionbahrain.com/blog',
   },
 }
 

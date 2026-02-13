@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Animation & Motion Graphics Bahrain | Film Production Bahrain',
     description: 'Professional animation and motion graphics production in Bahrain. 2D, 3D, and explainer animations.',
-    url: 'https://filmproductionbahrain.com/animation-motion-graphics',
+    url: 'https://www.filmproductionbahrain.com/animation-motion-graphics',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/animation-motion-graphics',
+    canonical: 'https://www.filmproductionbahrain.com/animation-motion-graphics',
   },
 }
 
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional animation and motion graphics services in Bahrain including 2D, 3D, and explainer video animation.',

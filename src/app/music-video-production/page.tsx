@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Music Video Production Bahrain | Film Production Bahrain',
     description: 'Creative music video production in Bahrain. Cinematic music videos and artist content.',
-    url: 'https://filmproductionbahrain.com/music-video-production',
+    url: 'https://www.filmproductionbahrain.com/music-video-production',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/music-video-production',
+    canonical: 'https://www.filmproductionbahrain.com/music-video-production',
   },
 }
 
@@ -70,7 +70,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional music video production services in Bahrain for artists, bands, and musicians.',

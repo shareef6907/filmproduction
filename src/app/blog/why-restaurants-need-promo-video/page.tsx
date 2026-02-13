@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Why Every Restaurant in Bahrain Needs a Professional Promo Video',
     description: 'How professional video content transforms restaurant marketing in Bahrain.',
-    url: 'https://filmproductionbahrain.com/blog/why-restaurants-need-promo-video',
+    url: 'https://www.filmproductionbahrain.com/blog/why-restaurants-need-promo-video',
     type: 'article',
     publishedTime: '2025-01-10',
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/blog/why-restaurants-need-promo-video',
+    canonical: 'https://www.filmproductionbahrain.com/blog/why-restaurants-need-promo-video',
   },
 }
 
@@ -27,14 +27,14 @@ const articleSchema = {
   author: {
     '@type': 'Organization',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   publisher: {
     '@type': 'Organization',
     name: 'Film Production Bahrain',
-    logo: { '@type': 'ImageObject', url: 'https://filmproductionbahrain.com/logo-white.png' },
+    logo: { '@type': 'ImageObject', url: 'https://www.filmproductionbahrain.com/logo-white.png' },
   },
-  mainEntityOfPage: 'https://filmproductionbahrain.com/blog/why-restaurants-need-promo-video',
+  mainEntityOfPage: 'https://www.filmproductionbahrain.com/blog/why-restaurants-need-promo-video',
 }
 
 export default function RestaurantPromoVideo() {

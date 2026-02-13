@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Influencer Video Production Bahrain | Film Production Bahrain',
     description: 'Professional video production for influencers and content creators in Bahrain.',
-    url: 'https://filmproductionbahrain.com/influencer-video-content',
+    url: 'https://www.filmproductionbahrain.com/influencer-video-content',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/influencer-video-content',
+    canonical: 'https://www.filmproductionbahrain.com/influencer-video-content',
   },
 }
 
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional video production services for influencers and content creators in Bahrain.',

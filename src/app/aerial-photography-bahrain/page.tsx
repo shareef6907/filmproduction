@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Aerial Photography & Drone Services Bahrain | Film Production Bahrain',
     description: 'Professional aerial photography and drone videography services in Bahrain.',
-    url: 'https://filmproductionbahrain.com/aerial-photography-bahrain',
+    url: 'https://www.filmproductionbahrain.com/aerial-photography-bahrain',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/aerial-photography-bahrain',
+    canonical: 'https://www.filmproductionbahrain.com/aerial-photography-bahrain',
   },
 }
 
@@ -43,7 +43,7 @@ const faqs = [
 const crossLinks = [
   {
     text: 'Need real estate video with aerials?',
-    url: 'https://filmproductionbahrain.com/real-estate-video-tours',
+    url: 'https://www.filmproductionbahrain.com/real-estate-video-tours',
     label: 'Real Estate Video Tours',
   },
   {
@@ -70,7 +70,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional aerial photography and drone videography services in Bahrain with licensed operators.',

@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Brand Film Production Bahrain | Film Production Bahrain',
     description: 'Cinematic brand film production in Bahrain. Premium brand videos and story films.',
-    url: 'https://filmproductionbahrain.com/brand-film-production',
+    url: 'https://www.filmproductionbahrain.com/brand-film-production',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/brand-film-production',
+    canonical: 'https://www.filmproductionbahrain.com/brand-film-production',
   },
 }
 
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Cinematic brand film production services in Bahrain creating emotive brand stories and premium video content.',

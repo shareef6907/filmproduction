@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Testimonial Video Production Bahrain | Film Production Bahrain',
     description: 'Professional testimonial and case study video production in Bahrain. Authentic customer stories.',
-    url: 'https://filmproductionbahrain.com/testimonial-video-production',
+    url: 'https://www.filmproductionbahrain.com/testimonial-video-production',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/testimonial-video-production',
+    canonical: 'https://www.filmproductionbahrain.com/testimonial-video-production',
   },
 }
 
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional testimonial and case study video production services in Bahrain featuring authentic customer stories.',

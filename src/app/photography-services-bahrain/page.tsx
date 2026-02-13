@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Photography Services Bahrain | Film Production Bahrain',
     description: 'Professional photography services in Bahrain. Commercial and corporate photography.',
-    url: 'https://filmproductionbahrain.com/photography-services-bahrain',
+    url: 'https://www.filmproductionbahrain.com/photography-services-bahrain',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/photography-services-bahrain',
+    canonical: 'https://www.filmproductionbahrain.com/photography-services-bahrain',
   },
 }
 
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional commercial and corporate photography services in Bahrain for businesses.',

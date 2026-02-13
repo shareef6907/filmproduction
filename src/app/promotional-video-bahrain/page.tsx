@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Promotional Video Production Bahrain | Film Production Bahrain',
     description: 'Professional promotional video production in Bahrain. Commercials, ads, and promo content.',
-    url: 'https://filmproductionbahrain.com/promotional-video-bahrain',
+    url: 'https://www.filmproductionbahrain.com/promotional-video-bahrain',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/promotional-video-bahrain',
+    canonical: 'https://www.filmproductionbahrain.com/promotional-video-bahrain',
   },
 }
 
@@ -70,7 +70,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional promotional video production services in Bahrain including commercials, ads, and marketing videos.',

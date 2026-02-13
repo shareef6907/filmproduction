@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Hotel & Hospitality Video Production Bahrain | Film Production Bahrain',
     description: 'Professional hotel and hospitality video production in Bahrain. Hotel and resort videos.',
-    url: 'https://filmproductionbahrain.com/hospitality-hotel-video',
+    url: 'https://www.filmproductionbahrain.com/hospitality-hotel-video',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/hospitality-hotel-video',
+    canonical: 'https://www.filmproductionbahrain.com/hospitality-hotel-video',
   },
 }
 
@@ -70,7 +70,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional hotel and hospitality video production services in Bahrain for hotels, resorts, and tourism businesses.',

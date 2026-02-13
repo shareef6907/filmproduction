@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Video Production Costs in Bahrain: What to Expect in 2026',
     description: 'Comprehensive guide to video production pricing in Bahrain for 2026.',
-    url: 'https://filmproductionbahrain.com/blog/video-production-costs-bahrain-2026',
+    url: 'https://www.filmproductionbahrain.com/blog/video-production-costs-bahrain-2026',
     type: 'article',
     publishedTime: '2025-01-15',
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/blog/video-production-costs-bahrain-2026',
+    canonical: 'https://www.filmproductionbahrain.com/blog/video-production-costs-bahrain-2026',
   },
 }
 
@@ -27,14 +27,14 @@ const articleSchema = {
   author: {
     '@type': 'Organization',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   publisher: {
     '@type': 'Organization',
     name: 'Film Production Bahrain',
-    logo: { '@type': 'ImageObject', url: 'https://filmproductionbahrain.com/logo-white.png' },
+    logo: { '@type': 'ImageObject', url: 'https://www.filmproductionbahrain.com/logo-white.png' },
   },
-  mainEntityOfPage: 'https://filmproductionbahrain.com/blog/video-production-costs-bahrain-2026',
+  mainEntityOfPage: 'https://www.filmproductionbahrain.com/blog/video-production-costs-bahrain-2026',
 }
 
 export default function VideoProductionCosts() {

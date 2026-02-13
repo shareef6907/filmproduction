@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Wedding Videography Bahrain | Film Production Bahrain',
     description: 'Cinematic wedding videography in Bahrain. Beautiful wedding films that capture your special day forever.',
-    url: 'https://filmproductionbahrain.com/wedding-videography',
+    url: 'https://www.filmproductionbahrain.com/wedding-videography',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/wedding-videography',
+    canonical: 'https://www.filmproductionbahrain.com/wedding-videography',
   },
 }
 
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional cinematic wedding videography services in Bahrain for ceremonies, engagements, and celebrations.',

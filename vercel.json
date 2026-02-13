@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "filmproductionbahrain.com"
+        }
+      ],
+      "destination": "https://www.filmproductionbahrain.com/:path*",
+      "permanent": true
+    }
+  ]
+}

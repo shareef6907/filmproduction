@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Construction Timelapse Video Bahrain | Film Production Bahrain',
     description: 'Professional construction timelapse video production in Bahrain. Document your building projects.',
-    url: 'https://filmproductionbahrain.com/construction-timelapse-video',
+    url: 'https://www.filmproductionbahrain.com/construction-timelapse-video',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/construction-timelapse-video',
+    canonical: 'https://www.filmproductionbahrain.com/construction-timelapse-video',
   },
 }
 
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional construction timelapse video production services in Bahrain for project documentation and marketing.',

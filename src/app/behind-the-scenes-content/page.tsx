@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Behind-the-Scenes Video Production Bahrain | Film Production Bahrain',
     description: 'Professional behind-the-scenes video production in Bahrain. Authentic BTS content.',
-    url: 'https://filmproductionbahrain.com/behind-the-scenes-content',
+    url: 'https://www.filmproductionbahrain.com/behind-the-scenes-content',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/behind-the-scenes-content',
+    canonical: 'https://www.filmproductionbahrain.com/behind-the-scenes-content',
   },
 }
 
@@ -43,7 +43,7 @@ const faqs = [
 const crossLinks = [
   {
     text: 'Need social media video content?',
-    url: 'https://filmproductionbahrain.com/social-media-video-content',
+    url: 'https://www.filmproductionbahrain.com/social-media-video-content',
     label: 'Social Media Videos',
   },
 ]
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional behind-the-scenes video production services in Bahrain for authentic brand content.',

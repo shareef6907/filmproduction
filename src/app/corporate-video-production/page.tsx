@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Corporate Video Production Bahrain | Film Production Bahrain',
     description: 'Professional corporate video production in Bahrain. Company profiles, training videos, and internal communications.',
-    url: 'https://filmproductionbahrain.com/corporate-video-production',
+    url: 'https://www.filmproductionbahrain.com/corporate-video-production',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/corporate-video-production',
+    canonical: 'https://www.filmproductionbahrain.com/corporate-video-production',
   },
 }
 
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional corporate video production services in Bahrain including company profiles, training videos, and internal communications.',

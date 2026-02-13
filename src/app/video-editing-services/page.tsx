@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Video Editing Services Bahrain | Film Production Bahrain',
     description: 'Professional video editing services in Bahrain. Post-production and color grading.',
-    url: 'https://filmproductionbahrain.com/video-editing-services',
+    url: 'https://www.filmproductionbahrain.com/video-editing-services',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/video-editing-services',
+    canonical: 'https://www.filmproductionbahrain.com/video-editing-services',
   },
 }
 
@@ -43,7 +43,7 @@ const faqs = [
 const crossLinks = [
   {
     text: 'Need full video production services?',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
     label: 'Film Production Bahrain',
   },
 ]
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional video editing and post-production services in Bahrain including color grading, motion graphics, and sound design.',

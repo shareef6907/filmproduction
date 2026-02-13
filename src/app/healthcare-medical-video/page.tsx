@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Healthcare & Medical Video Production Bahrain | Film Production Bahrain',
     description: 'Professional healthcare and medical video production in Bahrain. Hospital and clinic videos.',
-    url: 'https://filmproductionbahrain.com/healthcare-medical-video',
+    url: 'https://www.filmproductionbahrain.com/healthcare-medical-video',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/healthcare-medical-video',
+    canonical: 'https://www.filmproductionbahrain.com/healthcare-medical-video',
   },
 }
 
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional healthcare and medical video production services in Bahrain for hospitals, clinics, and medical practices.',

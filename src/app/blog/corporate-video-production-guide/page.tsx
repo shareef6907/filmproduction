@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Corporate Video Production: The Complete Guide for Bahrain Businesses',
     description: 'Everything Bahrain businesses need to know about corporate video production.',
-    url: 'https://filmproductionbahrain.com/blog/corporate-video-production-guide',
+    url: 'https://www.filmproductionbahrain.com/blog/corporate-video-production-guide',
     type: 'article',
     publishedTime: '2025-01-05',
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/blog/corporate-video-production-guide',
+    canonical: 'https://www.filmproductionbahrain.com/blog/corporate-video-production-guide',
   },
 }
 
@@ -27,14 +27,14 @@ const articleSchema = {
   author: {
     '@type': 'Organization',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   publisher: {
     '@type': 'Organization',
     name: 'Film Production Bahrain',
-    logo: { '@type': 'ImageObject', url: 'https://filmproductionbahrain.com/logo-white.png' },
+    logo: { '@type': 'ImageObject', url: 'https://www.filmproductionbahrain.com/logo-white.png' },
   },
-  mainEntityOfPage: 'https://filmproductionbahrain.com/blog/corporate-video-production-guide',
+  mainEntityOfPage: 'https://www.filmproductionbahrain.com/blog/corporate-video-production-guide',
 }
 
 export default function CorporateVideoGuide() {

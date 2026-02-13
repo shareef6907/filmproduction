@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Live Streaming Services Bahrain | Film Production Bahrain',
     description: 'Professional live streaming services in Bahrain. Multi-camera livestreams and webcasts.',
-    url: 'https://filmproductionbahrain.com/live-streaming-bahrain',
+    url: 'https://www.filmproductionbahrain.com/live-streaming-bahrain',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/live-streaming-bahrain',
+    canonical: 'https://www.filmproductionbahrain.com/live-streaming-bahrain',
   },
 }
 
@@ -70,7 +70,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional live streaming and webcast services in Bahrain for corporate events, conferences, and virtual events.',

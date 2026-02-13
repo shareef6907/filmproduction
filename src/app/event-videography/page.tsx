@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Event Videography Bahrain | Film Production Bahrain',
     description: 'Professional event videography in Bahrain. Conferences, galas, and corporate events captured with cinematic quality.',
-    url: 'https://filmproductionbahrain.com/event-videography',
+    url: 'https://www.filmproductionbahrain.com/event-videography',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/event-videography',
+    canonical: 'https://www.filmproductionbahrain.com/event-videography',
   },
 }
 
@@ -70,7 +70,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional event videography services in Bahrain including corporate events, conferences, and live streaming.',

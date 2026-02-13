@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Restaurant Video Production Bahrain | Film Production Bahrain',
     description: 'Professional restaurant video production in Bahrain. Food cinematography and promo videos that drive bookings.',
-    url: 'https://filmproductionbahrain.com/food-and-restaurant-video',
+    url: 'https://www.filmproductionbahrain.com/food-and-restaurant-video',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/food-and-restaurant-video',
+    canonical: 'https://www.filmproductionbahrain.com/food-and-restaurant-video',
   },
 }
 
@@ -70,7 +70,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional restaurant video production and food cinematography services in Bahrain.',

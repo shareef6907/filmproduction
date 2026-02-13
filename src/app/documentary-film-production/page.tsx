@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Documentary Film Production Bahrain | Film Production Bahrain',
     description: 'Award-quality documentary film production in Bahrain. Corporate documentaries, brand stories, and cultural films.',
-    url: 'https://filmproductionbahrain.com/documentary-film-production',
+    url: 'https://www.filmproductionbahrain.com/documentary-film-production',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/documentary-film-production',
+    canonical: 'https://www.filmproductionbahrain.com/documentary-film-production',
   },
 }
 
@@ -70,7 +70,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional documentary film production services in Bahrain including corporate documentaries, brand films, and cultural documentaries.',

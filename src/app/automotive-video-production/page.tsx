@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Automotive Video Production Bahrain | Film Production Bahrain',
     description: 'Professional automotive video production in Bahrain. Car commercials and vehicle content.',
-    url: 'https://filmproductionbahrain.com/automotive-video-production',
+    url: 'https://www.filmproductionbahrain.com/automotive-video-production',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/automotive-video-production',
+    canonical: 'https://www.filmproductionbahrain.com/automotive-video-production',
   },
 }
 
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional automotive video production services in Bahrain for car dealers, automotive brands, and enthusiasts.',

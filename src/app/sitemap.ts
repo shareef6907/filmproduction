@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://filmproductionbahrain.com'
+  const baseUrl = 'https://www.filmproductionbahrain.com'
   const currentDate = new Date().toISOString()
 
   // Static pages

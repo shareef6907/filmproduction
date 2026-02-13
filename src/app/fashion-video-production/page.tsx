@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Fashion Video Production Bahrain | Film Production Bahrain',
     description: 'Professional fashion video production in Bahrain. Lookbook videos and campaign films.',
-    url: 'https://filmproductionbahrain.com/fashion-video-production',
+    url: 'https://www.filmproductionbahrain.com/fashion-video-production',
     type: 'website',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com/fashion-video-production',
+    canonical: 'https://www.filmproductionbahrain.com/fashion-video-production',
   },
 }
 
@@ -65,7 +65,7 @@ const serviceSchema = {
   provider: {
     '@type': 'VideoProductionCompany',
     name: 'Film Production Bahrain',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
   },
   areaServed: { '@type': 'Country', name: 'Bahrain' },
   description: 'Professional fashion video production services in Bahrain for brands, boutiques, and designers.',

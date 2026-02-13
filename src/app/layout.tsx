@@ -4,7 +4,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp'
 import { GoogleAnalytics } from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://filmproductionbahrain.com'),
+  metadataBase: new URL('https://www.filmproductionbahrain.com'),
   title: {
     default: 'Film Production Bahrain | Commercial-Grade Video Production',
     template: '%s | Film Production Bahrain'
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://filmproductionbahrain.com',
+    url: 'https://www.filmproductionbahrain.com',
     siteName: 'Film Production Bahrain',
     title: 'Film Production Bahrain | Commercial-Grade Video Production',
     description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, wedding films & more.',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://filmproductionbahrain.com',
+    canonical: 'https://www.filmproductionbahrain.com',
   },
 }
 
@@ -85,12 +85,12 @@ export const viewport: Viewport = {
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'VideoProductionCompany'],
-  '@id': 'https://filmproductionbahrain.com',
+  '@id': 'https://www.filmproductionbahrain.com',
   name: 'Film Production Bahrain',
   alternateName: 'Cinematic Group - Film Production',
-  url: 'https://filmproductionbahrain.com',
-  logo: 'https://filmproductionbahrain.com/logo-white.png',
-  image: 'https://filmproductionbahrain.com/og-image.jpg',
+  url: 'https://www.filmproductionbahrain.com',
+  logo: 'https://www.filmproductionbahrain.com/logo-white.png',
+  image: 'https://www.filmproductionbahrain.com/og-image.jpg',
   description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, wedding films & more.',
   address: {
     '@type': 'PostalAddress',
@@ -145,8 +145,8 @@ const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Cinematic Group',
-  url: 'https://filmproductionbahrain.com',
-  logo: 'https://filmproductionbahrain.com/logo-white.png',
+  url: 'https://www.filmproductionbahrain.com',
+  logo: 'https://www.filmproductionbahrain.com/logo-white.png',
   sameAs: [
     'https://cinematicwebworks.com',
     'https://bahrainnights.com',
