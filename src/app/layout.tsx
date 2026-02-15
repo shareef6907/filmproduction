@@ -184,7 +184,6 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <GoogleAnalytics />
-        <div className="film-grain" aria-hidden="true" />
         {children}
         <FloatingWhatsApp />
       </body>
