@@ -175,7 +175,7 @@ export default function SportsVideoProduction() {
           <li>High frame rate cameras for slow motion</li>
           <li>Long lenses for field-level capture</li>
           <li>Stabilized gimbal for smooth tracking</li>
-          <li>Drone footage for aerial perspectives</li>
+          <li>Crane and jib shots for dynamic perspectives</li>
           <li>Multi-camera coverage for events</li>
           <li>Underwater housing for water sports</li>
           <li>Action cameras for POV footage</li>

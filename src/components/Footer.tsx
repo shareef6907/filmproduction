@@ -170,7 +170,7 @@ export default function Footer() {
               © {currentYear} Film Production Bahrain. Part of the Cinematic Group.
             </p>
             <p>
-              CR: 12345-6 | @hdvideos
+              @hdvideos
             </p>
           </div>
         </div>

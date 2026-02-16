@@ -158,7 +158,7 @@ export default function HospitalityHotelVideo() {
           <li>Behind-the-scenes and staff features</li>
           <li>Guest testimonial videos</li>
           <li>Seasonal and campaign content</li>
-          <li>Aerial drone footage</li>
+          <li>Elevated crane and jib shots</li>
           <li>Timelapse (sunrise, sunset, events)</li>
         </ul>
 

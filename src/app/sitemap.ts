@@ -42,7 +42,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'healthcare-medical-video',
     'educational-video-production',
     'video-editing-services',
-    'aerial-photography-bahrain',
     'live-streaming-bahrain',
     'virtual-event-production',
     'automotive-video-production',

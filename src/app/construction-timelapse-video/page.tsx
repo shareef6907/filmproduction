@@ -34,10 +34,6 @@ const faqs = [
     question: 'Can we access footage during the project?',
     answer: 'Yes, our systems provide remote access to captured images. You can view progress remotely, use images for project updates, and even create interim timelapse videos during construction. Full footage is processed into final videos upon project completion.',
   },
-  {
-    question: 'Do you provide drone footage as well?',
-    answer: 'Yes, we can combine fixed-camera timelapse with periodic drone footage to provide aerial perspectives of your construction progress. Drone footage adds production value and shows site context that ground-level cameras miss.',
-  },
 ]
 
 const crossLinks = [
@@ -159,13 +155,6 @@ export default function ConstructionTimelapseVideo() {
           Upon project completion, we produce polished timelapse videos from your captured footage. 
           This includes image selection, stabilization, color correction, music, and professional 
           editing. We deliver multiple versions for different uses.
-        </p>
-
-        <h3>Drone Integration</h3>
-        <p>
-          Enhance your timelapse with periodic drone footage. We can visit your site monthly or quarterly 
-          to capture aerial perspectives that complement your fixed-camera footage, providing comprehensive 
-          documentation from all angles.
         </p>
 
         <h2>Project Types We Document</h2>

@@ -150,7 +150,7 @@ export default function AutomotiveVideoProduction() {
         <h2>Techniques We Use</h2>
         <ul>
           <li>Gimbal-stabilized smooth motion shots</li>
-          <li>Drone aerials for dramatic reveals</li>
+          <li>Crane shots for dramatic reveals</li>
           <li>Car-to-car chase footage</li>
           <li>Interior POV and detail shots</li>
           <li>Rolling rig for close tracking</li>

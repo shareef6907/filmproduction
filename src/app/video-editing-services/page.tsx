@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: 'What file formats do you accept?',
-    answer: 'We accept all common video formats including MP4, MOV, AVI, MKV, and raw formats from all major cameras (Canon, Sony, RED, Blackmagic, etc.). We can work with footage from phones, DSLRs, cinema cameras, and drones.',
+    answer: 'We accept all common video formats including MP4, MOV, AVI, MKV, and raw formats from all major cameras (Canon, Sony, RED, Blackmagic, etc.). We can work with footage from phones, DSLRs, cinema cameras, and action cameras.',
   },
   {
     question: 'How long does video editing take?',
