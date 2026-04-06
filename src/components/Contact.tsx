@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Contact() {
   const whatsappNumber = '+97339007750'
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}`
-  const email = 'hello@filmproductionbahrain.com'
+  const email = 'ceo@bahrainnights.com'
 
   return (
     <section id="contact" className="py-24 bg-film-black relative overflow-hidden">
