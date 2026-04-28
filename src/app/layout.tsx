@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, wedding films & more. Part of the Cinematic Group. WhatsApp: +973 3900 7750',
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon.ico', type: 'image/x-icon' },
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
     ],
     apple: '/apple-touch-icon.png',
   },
