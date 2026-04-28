@@ -139,46 +139,60 @@ export default function VideoHero({ videoId, title, subtitle }: VideoHeroProps) 
 
   return (
     <div 
-      className="relative w-full overflow-hidden bg-black"
+      className="relative w-full overflow-hidden"
       style={{ 
         height: isMobile ? '50vh' : '70vh',
         minHeight: isMobile ? '300px' : '500px',
+        marginBottom: '-1px',
       }}
     >
-      {/* YouTube Player Container */}
+      {/* YouTube Player Container - scaled to hide black bars */}
       <div 
         id="video-hero-player"
         ref={playerContainerRef}
         className="absolute inset-0 w-full h-full pointer-events-none"
         style={{ 
-          transform: 'scale(1.2)',
+          transform: 'scale(1.3)',
           transformOrigin: 'center center',
         }}
       />
 
+      {/* Top gradient - subtle darkening */}
+      <div 
+        className="absolute inset-0 z-[2] pointer-events-none"
+        style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 30%)' }}
+      />
+
+      {/* Bottom gradient - smooth fade into page */}
+      <div 
+        className="absolute inset-0 z-[2] pointer-events-none"
+        style={{ background: 'linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.7) 80%, #000000 100%)' }}
+      />
+
+      {/* Side vignette */}
+      <div 
+        className="absolute inset-0 z-[2] pointer-events-none"
+        style={{ background: 'linear-gradient(to right, rgba(0,0,0,0.3), transparent 15%, transparent 85%, rgba(0,0,0,0.3))' }}
+      />
+
       {/* Fallback if no video */}
       {!isPlayerReady && videoId && (
-        <div className="absolute inset-0 bg-gray-900" />
+        <div className="absolute inset-0 bg-gray-900 -z-10" />
       )}
 
-      {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
-
       {/* Content Overlay */}
-      <div className="absolute inset-0 flex items-end justify-start pb-12 md:pb-20 px-6 md:px-12 lg:px-16">
+      <div className="absolute inset-0 flex items-end justify-start pb-8 md:pb-16 px-6 md:px-12 lg:px-16 z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="max-w-2xl"
         >
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-3 md:mb-4 drop-shadow-lg">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-3 md:mb-4 drop-shadow-2xl">
             {title}
           </h1>
           {subtitle && (
-            <p className="text-lg md:text-xl text-gray-300 max-w-xl">
+            <p className="text-lg md:text-xl text-gray-300 max-w-xl drop-shadow-lg">
               {subtitle}
             </p>
           )}
@@ -188,7 +202,7 @@ export default function VideoHero({ videoId, title, subtitle }: VideoHeroProps) 
       {/* Mute/Unmute Button */}
       <button
         onClick={toggleMute}
-        className={`absolute ${isMobile ? 'bottom-8 right-4' : 'bottom-8 right-6'} p-3 md:p-3 bg-red-600 hover:bg-red-500 active:bg-red-700 rounded-full border-2 border-white text-white transition-all z-20 ${
+        className={`absolute ${isMobile ? 'bottom-6 right-4' : 'bottom-6 right-6'} p-3 md:p-3 bg-red-600 hover:bg-red-500 active:bg-red-700 rounded-full border-2 border-white text-white transition-all z-20 ${
           isMobile ? 'animate-pulse' : ''
         }`}
         aria-label={isMuted ? 'Unmute' : 'Mute'}
