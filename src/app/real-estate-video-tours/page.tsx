@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import ServicePageLayout from '@/components/ServicePageLayout'
+import VideoHero from '@/components/VideoHero'
 
 export const metadata: Metadata = {
   title: 'Real Estate Video Tours Bahrain | Property Walkthroughs & Virtual Tours',
@@ -70,6 +71,11 @@ const serviceSchema = {
 export default function RealEstateVideoTours() {
   return (
     <>
+      <VideoHero
+        videoId="Uanc4fHO7h8"
+        title="Real Estate Video Tours"
+        subtitle="Property walkthroughs & virtual tours"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

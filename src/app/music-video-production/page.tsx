@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import ServicePageLayout from '@/components/ServicePageLayout'
+import VideoHero from '@/components/VideoHero'
 
 export const metadata: Metadata = {
   title: 'Music Video Production Bahrain | Artists & Bands',
@@ -79,6 +80,11 @@ const serviceSchema = {
 export default function MusicVideoProduction() {
   return (
     <>
+      <VideoHero
+        videoId="0o3yqUNUtwU"
+        title="Music Video Production"
+        subtitle="Artists, bands & music videos"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
