@@ -141,18 +141,20 @@ export default function VideoHero({ videoId, title, subtitle }: VideoHeroProps) 
     <div 
       className="relative w-full overflow-hidden"
       style={{ 
-        height: isMobile ? '50vh' : '70vh',
-        minHeight: isMobile ? '300px' : '500px',
+        height: isMobile ? '60vh' : '80vh',
+        minHeight: isMobile ? '400px' : '600px',
+        marginLeft: 'calc(-50vw + 50%)',
+        width: '100vw',
         marginBottom: '-1px',
       }}
     >
-      {/* YouTube Player Container - scaled to hide black bars */}
+      {/* YouTube Player Container - object-fit cover approach */}
       <div 
         id="video-hero-player"
         ref={playerContainerRef}
         className="absolute inset-0 w-full h-full pointer-events-none"
         style={{ 
-          transform: 'scale(1.3)',
+          transform: 'scale(1.05)',
           transformOrigin: 'center center',
         }}
       />
@@ -181,7 +183,7 @@ export default function VideoHero({ videoId, title, subtitle }: VideoHeroProps) 
       )}
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 flex items-end justify-start pb-8 md:pb-16 px-6 md:px-12 lg:px-16 z-10">
+      <div className="absolute inset-0 flex items-end justify-start pb-12 md:pb-16 px-6 md:px-12 lg:px-16 z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -199,10 +201,10 @@ export default function VideoHero({ videoId, title, subtitle }: VideoHeroProps) 
         </motion.div>
       </div>
 
-      {/* Mute/Unmute Button */}
+      {/* Mute/Unmute Button - inside video area */}
       <button
         onClick={toggleMute}
-        className={`absolute ${isMobile ? 'bottom-6 right-4' : 'bottom-6 right-6'} p-3 md:p-3 bg-red-600 hover:bg-red-500 active:bg-red-700 rounded-full border-2 border-white text-white transition-all z-20 ${
+        className={`absolute ${isMobile ? 'bottom-4 right-4' : 'bottom-4 right-4'} p-3 z-20 rounded-full bg-black/50 backdrop-blur-sm text-white hover:bg-black/70 transition ${
           isMobile ? 'animate-pulse' : ''
         }`}
         aria-label={isMuted ? 'Unmute' : 'Mute'}
