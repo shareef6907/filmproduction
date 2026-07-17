@@ -15,6 +15,7 @@ const services = [
 const cinematicGroup = [
   { name: 'Cinematic Web Works', href: 'https://cinematicwebworks.com', external: true },
   { name: 'Bahrain Nights', href: 'https://bahrainnights.com', external: true },
+  { name: 'Premiera Live', href: 'https://www.premieralive.com', external: true },
 ]
 
 const resources = [
