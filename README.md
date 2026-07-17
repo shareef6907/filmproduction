@@ -48,3 +48,4 @@ Push to GitHub and Vercel will auto-deploy.
 - Lazy loading for videos
 - Edge caching on Vercel
 - Core Web Vitals optimized
+# redeploy
