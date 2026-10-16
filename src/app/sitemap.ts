@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Service pages
   const servicePages = [
     'corporate-video-production',
+    'video-production-bahrain',
     'commercial-production',
     'event-videography',
     'music-video-production',
