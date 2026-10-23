@@ -42,6 +42,11 @@ const faqs = [
 
 const crossLinks = [
   {
+    text: 'Need a corporate film for recruitment, training, or internal comms?',
+    url: 'https://www.filmproductionbahrain.com/corporate-video-production',
+    label: 'Corporate Film & Video Production',
+  },
+  {
     text: 'Need a cinematic website for your brand?',
     url: 'https://cinematicwebworks.com/cinematic-websites',
     label: 'Cinematic Websites',
