@@ -119,13 +119,6 @@ const localBusinessSchema = {
     { '@type': 'Country', name: 'Qatar' },
     { '@type': 'Country', name: 'Kuwait' },
   ],
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '75',
-    bestRating: '5',
-    worstRating: '1',
-  },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Video Production Services',
