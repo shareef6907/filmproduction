@@ -10,6 +10,28 @@ const services = [
   { name: 'Real Estate Tours', href: '/real-estate-video-tours' },
   { name: 'Restaurant Videos', href: '/food-and-restaurant-video' },
   { name: 'Wedding Films', href: '/wedding-videography' },
+  { name: 'Video Production Bahrain', href: '/video-production-bahrain' },
+  { name: 'Brand Films', href: '/brand-film-production' },
+  { name: 'Documentaries', href: '/documentary-film-production' },
+  { name: 'Product Videos', href: '/product-video-production' },
+  { name: 'Social Media Video', href: '/social-media-video-content' },
+  { name: 'Animation & Motion', href: '/animation-motion-graphics' },
+  { name: 'Explainer Videos', href: '/explainer-video-production' },
+  { name: 'Testimonial Videos', href: '/testimonial-video-production' },
+  { name: 'Promotional Video', href: '/promotional-video-bahrain' },
+  { name: 'Video Editing', href: '/video-editing-services' },
+  { name: 'Live Streaming', href: '/live-streaming-bahrain' },
+  { name: 'Virtual Events', href: '/virtual-event-production' },
+  { name: 'Construction Timelapse', href: '/construction-timelapse-video' },
+  { name: 'Hotel & Hospitality', href: '/hospitality-hotel-video' },
+  { name: 'Healthcare Video', href: '/healthcare-medical-video' },
+  { name: 'Education Video', href: '/educational-video-production' },
+  { name: 'Automotive Video', href: '/automotive-video-production' },
+  { name: 'Fashion Video', href: '/fashion-video-production' },
+  { name: 'Sports Video', href: '/sports-video-production' },
+  { name: 'Influencer Video', href: '/influencer-video-content' },
+  { name: 'Behind the Scenes', href: '/behind-the-scenes-content' },
+  { name: 'Photography', href: '/photography-services-bahrain' },
 ]
 
 const cinematicGroup = [
@@ -73,7 +95,7 @@ export default function Footer() {
             <h4 className="heading-display text-white text-sm tracking-wider mb-6">
               Services
             </h4>
-            <ul className="space-y-3">
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2.5">
               {services.map((service) => (
                 <li key={service.href}>
                   <Link

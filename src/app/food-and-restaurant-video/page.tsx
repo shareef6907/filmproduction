@@ -208,7 +208,7 @@ export default function FoodAndRestaurantVideo() {
         </p>
         <ul>
           <li>Fine dining restaurants</li>
-          <li>Hotel restaurants and bars</li>
+          <li>Hotel restaurants and lounges</li>
           <li>Casual dining and cafes</li>
           <li>Fast casual and QSR chains</li>
           <li>Cloud kitchens and delivery brands</li>
