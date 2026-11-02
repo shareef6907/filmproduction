@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: 'Film Production Bahrain | Commercial-Grade Video Production',
     template: '%s | Film Production Bahrain'
   },
-  description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, wedding films & more. Part of the Cinematic Group. WhatsApp: +973 3900 7750',
+  description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage and wedding films in Bahrain.',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '48x48' },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url: 'https://www.filmproductionbahrain.com',
     siteName: 'Film Production Bahrain',
     title: 'Film Production Bahrain | Commercial-Grade Video Production',
-    description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, wedding films & more.',
+    description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage and wedding films in Bahrain.',
     images: [
       {
         url: '/og-image.jpg',
@@ -91,7 +91,7 @@ const localBusinessSchema = {
   url: 'https://www.filmproductionbahrain.com',
   logo: 'https://www.filmproductionbahrain.com/logo-white.png',
   image: 'https://www.filmproductionbahrain.com/og-image.jpg',
-  description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage, wedding films & more.',
+  description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage and wedding films in Bahrain.',
   address: {
     '@type': 'PostalAddress',
     addressCountry: 'BH',
@@ -119,13 +119,6 @@ const localBusinessSchema = {
     { '@type': 'Country', name: 'Qatar' },
     { '@type': 'Country', name: 'Kuwait' },
   ],
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '75',
-    bestRating: '5',
-    worstRating: '1',
-  },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Video Production Services',

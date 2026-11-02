@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/_next/', '/admin/', '/*.json$'],
     },
-    sitemap: 'https://filmproductionbahrain.com/sitemap.xml',
+    sitemap: 'https://www.filmproductionbahrain.com/sitemap.xml',
   }
 }

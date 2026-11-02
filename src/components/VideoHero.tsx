@@ -190,9 +190,9 @@ export default function VideoHero({ videoId, title, subtitle }: VideoHeroProps) 
           transition={{ duration: 0.6 }}
           className="max-w-2xl"
         >
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-3 md:mb-4 drop-shadow-2xl">
+          <p className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-3 md:mb-4 drop-shadow-2xl">
             {title}
-          </h1>
+          </p>
           {subtitle && (
             <p className="text-lg md:text-xl text-gray-300 max-w-xl drop-shadow-lg">
               {subtitle}

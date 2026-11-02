@@ -126,7 +126,7 @@ export default function HospitalityHotelVideo() {
         <h3>Restaurant and F&B Videos</h3>
         <p>
           Food and beverage is a major differentiator. We produce appetizing videos showcasing your 
-          restaurants, bars, room service, and culinary experiences. From chef features to food 
+          restaurants, lounges, room service, and culinary experiences. From chef features to food 
           preparation, we make viewers hungry to dine with you.
         </p>
 
