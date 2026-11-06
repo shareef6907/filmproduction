@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import ServicePageLayout from '@/components/ServicePageLayout'
 import VideoHero from '@/components/VideoHero'
 
@@ -130,7 +131,12 @@ export default function RealEstateVideoTours() {
           For developers launching new projects, we create comprehensive marketing videos 
           that combine rendered visuals, site footage, amenity showcases, and neighborhood 
           highlights. These videos support sales launches, marketing campaigns, and investor 
-          presentations.
+          presentations. Where the project is still under construction, our{' '}
+          <Link href="/construction-timelapse-video" className="text-film-gold hover:underline">
+            construction timelapse video service
+          </Link>{' '}
+          documents the build from ground-breaking to handover, giving buyers and investors a 
+          record of the project as it happened.
         </p>
 
         <h3>Virtual Tours</h3>
