@@ -6,7 +6,7 @@ import { GoogleAnalytics } from '@/components/GoogleAnalytics'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.filmproductionbahrain.com'),
   title: {
-    default: 'Film Production Bahrain | Commercial-Grade Video Production',
+    default: 'Film Production Bahrain by Premiera Live | Commercial-Grade Video Production',
     template: '%s | Film Production Bahrain'
   },
   description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage and wedding films in Bahrain.',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://www.filmproductionbahrain.com',
     siteName: 'Premiera Live',
-    title: 'Film Production Bahrain by Premiera Live | Video Production',
+    title: 'Film Production Bahrain by Premiera Live | Commercial-Grade Video Production',
     description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage and wedding films in Bahrain.',
     images: [
       {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Film Production Bahrain by Premiera Live | Video Production',
+    title: 'Film Production Bahrain by Premiera Live | Commercial-Grade Video Production',
     description: 'Commercial-grade video production for brands that demand more. A Premiera Live company.',
     images: ['/og-image.jpg'],
   },
