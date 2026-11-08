@@ -1,6 +1,6 @@
 # Film Production Bahrain
 
-Premium film production website for Bahrain Nights.
+Premium film production website for Premiera Live.
 
 ## Setup
 
