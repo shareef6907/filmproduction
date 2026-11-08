@@ -195,7 +195,7 @@ export default function HospitalityHotelVideo() {
         <h2>Why Choose Film Production Bahrain?</h2>
         <p>
           We specialize in making spaces look their best on camera. Our team understands the hospitality 
-          industry and what motivates travel decisions. As part of the Cinematic Group, we can also 
+          industry and what motivates travel decisions. As part of Premiera Live, we can also 
           help with hospitality websites, ensuring seamless integration of video content into your 
           digital presence.
         </p>

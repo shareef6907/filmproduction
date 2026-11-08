@@ -34,7 +34,7 @@ const services = [
   { name: 'Photography', href: '/photography-services-bahrain' },
 ]
 
-const cinematicGroup = [
+const ourSites = [
   { name: 'Cinematic Web Works', href: 'https://cinematicwebworks.com', external: true },
   { name: 'Bahrain Nights', href: 'https://bahrainnights.com', external: true },
   { name: 'Premiera Live', href: 'https://www.premieralive.com', external: true },
@@ -61,7 +61,7 @@ export default function Footer() {
             </h3>
             <p className="text-film-light/60 text-sm mb-6 leading-relaxed">
               Commercial-grade video production for brands that demand more. 
-              Part of the Cinematic Group.
+              A Premiera Live company.
             </p>
             {/* Social Links */}
             <div className="flex gap-4">
@@ -109,13 +109,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Cinematic Group Column */}
+          {/* Our Sites Column */}
           <div>
             <h4 className="heading-display text-white text-sm tracking-wider mb-6">
-              Cinematic Group
+              Our Sites
             </h4>
             <ul className="space-y-3">
-              {cinematicGroup.map((link) => (
+              {ourSites.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -190,7 +190,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/5">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-film-light/40">
             <p>
-              © {currentYear} Film Production Bahrain. Part of the Cinematic Group.
+              © {currentYear} Film Production Bahrain by Premiera Live. Bahrain Nights Premiera Live · CR 113587-1.
             </p>
             <p>
               @hdvideos

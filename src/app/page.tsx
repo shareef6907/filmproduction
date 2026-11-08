@@ -7,7 +7,7 @@ import VideoRow from '@/components/VideoRow'
 import VideoModal from '@/components/VideoModal'
 import Services from '@/components/Services'
 import Showreel from '@/components/Showreel'
-import CinematicGroup from '@/components/CinematicGroup'
+import PremieraLiveFamily from '@/components/PremieraLiveFamily'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import { VideoData } from '@/types/video'
@@ -111,8 +111,8 @@ export default function Home() {
       {/* Showreel Section */}
       <Showreel />
 
-      {/* Cinematic Group Section */}
-      <CinematicGroup />
+      {/* Premiera Live Family Section */}
+      <PremieraLiveFamily />
 
       {/* Contact Section */}
       <Contact />

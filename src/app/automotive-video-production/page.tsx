@@ -201,8 +201,7 @@ export default function AutomotiveVideoProduction() {
         <h2>Why Choose Film Production Bahrain?</h2>
         <p>
           We're car enthusiasts who understand what makes vehicles special. Our team knows the angles, 
-          movements, and techniques that make automotive content stand out. As part of the Cinematic 
-          Group, we can also help with automotive websites and comprehensive marketing solutions for 
+          movements, and techniques that make automotive content stand out. As part of Premiera Live, we can also help with automotive websites and comprehensive marketing solutions for 
           dealerships and brands.
         </p>
       </ServicePageLayout>

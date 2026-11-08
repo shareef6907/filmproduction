@@ -192,7 +192,7 @@ export default function HealthcareMedicalVideo() {
         <p>
           We combine professional video production with healthcare industry experience. Our team 
           knows how to navigate medical environments while creating compelling content that builds 
-          patient trust. As part of the Cinematic Group, we can also help with healthcare websites 
+          patient trust. As part of Premiera Live, we can also help with healthcare websites 
           to host your video content effectively.
         </p>
       </ServicePageLayout>

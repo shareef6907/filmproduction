@@ -202,7 +202,7 @@ export default function CommercialProduction() {
 
         <h2>Why Choose Film Production Bahrain?</h2>
         <p>
-          As part of the Cinematic Group, we bring a filmmaker's eye to advertising. Our commercials 
+          As part of Premiera Live, we bring a filmmaker's eye to advertising. Our commercials 
           don't just sell—they entertain and engage. We understand the unique dynamics of the Bahrain 
           and GCC market, including cultural considerations and consumer preferences.
         </p>

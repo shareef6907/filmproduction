@@ -191,7 +191,7 @@ export default function TestimonialVideoProduction() {
         <p>
           Our team knows how to put customers at ease and draw out authentic, compelling stories. 
           We combine interview expertise with professional production quality to create testimonials 
-          that look great and convert. As part of the Cinematic Group, we can also help you build 
+          that look great and convert. As part of Premiera Live, we can also help you build 
           testimonial pages and integrate videos into your marketing strategy.
         </p>
       </ServicePageLayout>

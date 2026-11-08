@@ -217,7 +217,7 @@ export default function VirtualEventProduction() {
         <p>
           We bring professional broadcast experience to virtual events. Our team understands both 
           the technical and creative elements needed to produce engaging online experiences. As part 
-          of the Cinematic Group, we can also support your virtual events with website development, 
+          of Premiera Live, we can also support your virtual events with website development, 
           promotional videos, and post-event content creation.
         </p>
       </ServicePageLayout>

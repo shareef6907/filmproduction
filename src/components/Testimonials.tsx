@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 
 const testimonials = [
-  { quote: "Exceptional quality and professionalism. The team at Bahrain Nights delivered a corporate film that exceeded all our expectations.", author: "Ahmed Al Khalifa", role: "Marketing Director", company: "Leading Bahrain Bank", rating: 5 },
+  { quote: "Exceptional quality and professionalism. The team at Premiera Live delivered a corporate film that exceeded all our expectations.", author: "Ahmed Al Khalifa", role: "Marketing Director", company: "Leading Bahrain Bank", rating: 5 },
   { quote: "We've worked with many production companies, but none match the creative vision and technical excellence of this team.", author: "Sarah Johnson", role: "CEO", company: "International Tech Startup", rating: 5 },
   { quote: "From concept to final delivery, the entire process was seamless. They understood our vision immediately.", author: "Mohammed Hassan", role: "Events Manager", company: "Bahrain Exhibition Centre", rating: 5 },
   { quote: "The documentary they produced for us won recognition at multiple festivals. Their storytelling ability is world-class.", author: "Dr. Fatima Al Doseri", role: "Director", company: "Bahrain Cultural Foundation", rating: 5 },

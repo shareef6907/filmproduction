@@ -212,7 +212,7 @@ export default function SportsVideoProduction() {
         <p>
           We combine professional production quality with genuine passion for sports. Our team includes 
           crew members who are athletes and sports fans—we understand the culture and what makes sports 
-          content connect with audiences. As part of the Cinematic Group, we can also help with websites 
+          content connect with audiences. As part of Premiera Live, we can also help with websites 
           and event services for sports organizations.
         </p>
       </ServicePageLayout>
