@@ -189,7 +189,7 @@ export default function FashionVideoProduction() {
         <p>
           We understand fashion's visual demands and bring the technical skill to meet them. Our team 
           knows how to make garments look their best on camera, working with movement, fabric, and 
-          light to create compelling content. As part of the Cinematic Group, we can also help with 
+          light to create compelling content. As part of Premiera Live, we can also help with 
           e-commerce websites to showcase your fashion videos effectively.
         </p>
       </ServicePageLayout>

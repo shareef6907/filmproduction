@@ -195,7 +195,7 @@ export default function AnimationMotionGraphics() {
         <p>
           Our animation team combines artistic talent with years of professional experience. We've 
           created animations for businesses across Bahrain and the GCC, from startups to enterprises. 
-          As part of the Cinematic Group, we understand how animation fits into broader marketing 
+          As part of Premiera Live, we understand how animation fits into broader marketing 
           strategy and can help you maximize the impact of your animated content.
         </p>
       </ServicePageLayout>

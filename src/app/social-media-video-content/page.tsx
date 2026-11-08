@@ -186,7 +186,7 @@ export default function SocialMediaVideoContent() {
         <p>
           Our team lives on social media and understands what works on each platform. We combine that 
           knowledge with professional production quality that elevates your brand above amateur content. 
-          As part of the Cinematic Group, we can also help with your website, event coverage, and broader 
+          As part of Premiera Live, we can also help with your website, event coverage, and broader 
           video marketing strategy.
         </p>
       </ServicePageLayout>

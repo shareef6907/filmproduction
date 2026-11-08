@@ -61,7 +61,7 @@ export default function Hero({ headerVideo }: HeroProps) {
         <div className="max-w-5xl mx-auto animate-fade-in-up">
           {/* Pre-title */}
           <p className="heading-display text-film-gold text-sm md:text-base tracking-[0.3em] mb-6">
-            Cinematic Group
+            A Premiera Live company
           </p>
           
           {/* Main Title */}

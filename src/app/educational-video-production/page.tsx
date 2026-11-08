@@ -193,8 +193,7 @@ export default function EducationalVideoProduction() {
         <h2>Why Choose Film Production Bahrain?</h2>
         <p>
           We combine professional video production with understanding of effective learning design. 
-          Our educational videos don't just look good—they teach effectively. As part of the Cinematic 
-          Group, we can also help with website development for educational institutions and online 
+          Our educational videos don't just look good—they teach effectively. As part of Premiera Live, we can also help with website development for educational institutions and online 
           learning platforms.
         </p>
       </ServicePageLayout>

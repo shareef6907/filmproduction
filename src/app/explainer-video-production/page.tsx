@@ -191,7 +191,7 @@ export default function ExplainerVideoProduction() {
         <p>
           We've produced explainer videos for businesses of all sizes across diverse industries. Our 
           team combines marketing expertise with production quality to create videos that don't just 
-          look good—they convert. As part of the Cinematic Group, we can also help you build landing 
+          look good—they convert. As part of Premiera Live, we can also help you build landing 
           pages and marketing campaigns to maximize your explainer video's impact.
         </p>
       </ServicePageLayout>

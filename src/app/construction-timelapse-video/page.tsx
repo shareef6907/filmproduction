@@ -252,7 +252,7 @@ export default function ConstructionTimelapseVideo() {
         <p>
           We understand construction environments and know how to capture projects effectively. Our
           equipment is built for the demands of construction sites—heat, dust, and extended deployment.
-          As part of the Cinematic Group, we can also produce additional video content for your project:
+          As part of Premiera Live, we can also produce additional video content for your project:
           promotional videos, virtual tours, and marketing materials that leverage your timelapse footage.
         </p>
         <p>

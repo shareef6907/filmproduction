@@ -194,8 +194,7 @@ export default function LiveStreamingBahrain() {
         <h2>Why Choose Film Production Bahrain?</h2>
         <p>
           We bring broadcast experience to every livestream. Our team has produced live content for 
-          major events and knows how to handle the pressure of real-time production. As part of the 
-          Cinematic Group, we can also provide event equipment, AV support, and post-event video 
+          major events and knows how to handle the pressure of real-time production. As part of Premiera Live, we can also provide event equipment, AV support, and post-event video 
           production to maximize the value of your live content.
         </p>
       </ServicePageLayout>

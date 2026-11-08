@@ -11,7 +11,7 @@ const faqs = [
   { question: 'What video formats do you deliver?', answer: 'We deliver in all standard formats including 4K, HD, and social media-optimized versions. Our standard delivery includes files optimized for broadcast, YouTube, Instagram, LinkedIn, and TikTok.' },
   { question: 'How much does video production cost in Bahrain?', answer: 'Costs depend on project scope, duration, and complexity. Our packages start from BD 500 for simple projects and scale up for larger productions. We provide detailed quotes after understanding your specific requirements.' },
   { question: 'Do you provide scriptwriting services?', answer: 'Yes, we offer complete pre-production services including concept development, scriptwriting, and storyboarding. Our creative team will work with you to craft a compelling narrative for your video.' },
-  { question: "What makes Bahrain Nights different from other production companies?", answer: "With over 10 years of experience and 900+ completed projects, we bring unmatched expertise to every production. Our cinema-grade equipment, award-winning team, and commitment to storytelling excellence sets us apart." },
+  { question: "What makes Premiera Live different from other production companies?", answer: "With over 10 years of experience and 900+ completed projects, we bring unmatched expertise to every production. Our cinema-grade equipment, award-winning team, and commitment to storytelling excellence sets us apart." },
 ]
 
 export default function FAQ() {

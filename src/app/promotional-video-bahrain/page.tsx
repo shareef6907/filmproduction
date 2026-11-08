@@ -197,7 +197,7 @@ export default function PromotionalVideoBahrain() {
         <h2>Why Choose Film Production Bahrain?</h2>
         <p>
           We combine creative excellence with marketing discipline. Our promotional videos look 
-          cinematic and perform commercially. As part of the Cinematic Group, we can also build 
+          cinematic and perform commercially. As part of Premiera Live, we can also build 
           landing pages, websites, and complete marketing campaigns around your video content. 
           From concept to conversion, we're your complete video marketing partner.
         </p>

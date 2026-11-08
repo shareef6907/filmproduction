@@ -308,7 +308,7 @@ export default function CorporateVideoProduction() {
 
         <h2>Why Choose Film Production Bahrain?</h2>
         <p>
-          As part of the Cinematic Group, we bring a unique combination of creative storytelling and
+          As part of Premiera Live, we bring a unique combination of creative storytelling and
           technical excellence to every corporate project. Our team includes experienced directors,
           cinematographers, and editors who have worked with some of the biggest brands in the region.
           We understand the corporate environment and know how to produce content that meets your

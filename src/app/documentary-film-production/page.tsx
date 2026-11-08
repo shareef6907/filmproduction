@@ -180,7 +180,7 @@ export default function DocumentaryFilmProduction() {
         <p>
           Our team brings years of experience in documentary filmmaking combined with deep knowledge of 
           Bahrain and the Gulf region. We understand the cultural nuances essential for authentic storytelling 
-          in this part of the world. As part of the Cinematic Group, we have access to the resources and 
+          in this part of the world. As part of Premiera Live, we have access to the resources and 
           expertise needed to deliver professional documentaries that meet international standards.
         </p>
         <p>

@@ -29,7 +29,7 @@ const companies = [
   },
 ]
 
-export default function CinematicGroup() {
+export default function PremieraLiveFamily() {
   return (
     <section className="py-24 bg-gradient-to-b from-film-black via-film-dark to-film-black relative overflow-hidden">
       {/* Decorative elements */}
@@ -42,17 +42,17 @@ export default function CinematicGroup() {
             <div className="flex items-center justify-center gap-4">
               <div className="w-12 h-px bg-film-gold/50" />
               <span className="heading-display text-film-gold text-sm tracking-[0.3em]">
-                Part of the
+                Part of
               </span>
               <div className="w-12 h-px bg-film-gold/50" />
             </div>
           </div>
           <h2 className="font-display text-4xl md:text-5xl text-white mb-6">
-            The Cinematic Group
+            Premiera Live
           </h2>
           <p className="text-film-light/70 max-w-2xl mx-auto">
-            Film Production Bahrain is part of a family of creative companies, 
-            offering integrated solutions for brands that want more than just a video.
+            Film Production Bahrain is a Premiera Live company, working alongside sister brands 
+            to offer integrated solutions for brands that want more than just a video.
           </p>
         </div>
 

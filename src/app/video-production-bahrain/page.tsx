@@ -212,7 +212,7 @@ export default function VideoProductionBahrain() {
           timelines, and someone who answers the phone when you call.
         </p>
         <p>
-          As part of the Cinematic Group, we have access to supplementary services including
+          As part of Premiera Live, we have access to supplementary services including
           photography, animation, website development, and event production. For clients
           with broader needs, this integrated approach reduces the overhead of managing
           multiple vendors.

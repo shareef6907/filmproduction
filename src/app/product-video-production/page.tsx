@@ -194,7 +194,7 @@ export default function ProductVideoProduction() {
         <p>
           Our team combines technical expertise with marketing knowledge to create product videos that 
           don't just look good—they sell. We understand what makes customers click "buy" and craft 
-          content accordingly. As part of the Cinematic Group, we can also help with product photography, 
+          content accordingly. As part of Premiera Live, we can also help with product photography, 
           e-commerce websites, and comprehensive digital marketing for your products.
         </p>
       </ServicePageLayout>

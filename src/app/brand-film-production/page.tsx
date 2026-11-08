@@ -199,8 +199,8 @@ export default function BrandFilmProduction() {
         <h2>Why Choose Film Production Bahrain?</h2>
         <p>
           We're filmmakers who understand branding. Our team brings the creative vision and technical 
-          skill to create brand films that stand out. As part of the Cinematic Group, we can also build 
-          the cinematic websites where your brand film will live—creating a cohesive brand experience 
+          skill to create brand films that stand out. As part of Premiera Live, we can also build 
+          the film-led websites where your brand film will live—creating a cohesive brand experience 
           from video to web.
         </p>
       </ServicePageLayout>

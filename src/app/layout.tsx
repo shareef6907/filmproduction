@@ -29,34 +29,34 @@ export const metadata: Metadata = {
     'music video production bahrain',
     'real estate video bahrain',
     'restaurant video production bahrain',
-    'cinematic group',
+    'premiera live',
     'professional videography bahrain',
     'tv commercial bahrain',
     'brand films bahrain',
   ],
-  authors: [{ name: 'Cinematic Group' }],
-  creator: 'Cinematic Group',
-  publisher: 'Cinematic Group',
+  authors: [{ name: 'Premiera Live' }],
+  creator: 'Premiera Live',
+  publisher: 'Premiera Live',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.filmproductionbahrain.com',
-    siteName: 'Film Production Bahrain',
-    title: 'Film Production Bahrain | Commercial-Grade Video Production',
+    siteName: 'Premiera Live',
+    title: 'Film Production Bahrain by Premiera Live | Video Production',
     description: 'Commercial-grade video production for brands that demand more. Corporate videos, commercials, event coverage and wedding films in Bahrain.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Film Production Bahrain - Cinematic Group',
+        alt: 'Film Production Bahrain by Premiera Live',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Film Production Bahrain | Commercial-Grade Video Production',
-    description: 'Commercial-grade video production for brands that demand more. Part of the Cinematic Group.',
+    title: 'Film Production Bahrain by Premiera Live | Video Production',
+    description: 'Commercial-grade video production for brands that demand more. A Premiera Live company.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -86,8 +86,9 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'VideoProductionCompany'],
   '@id': 'https://www.filmproductionbahrain.com',
-  name: 'Film Production Bahrain',
-  alternateName: 'Cinematic Group - Film Production',
+  name: 'Premiera Live',
+  legalName: 'Bahrain Nights Premiera Live',
+  alternateName: 'Film Production Bahrain',
   url: 'https://www.filmproductionbahrain.com',
   logo: 'https://www.filmproductionbahrain.com/logo-white.png',
   image: 'https://www.filmproductionbahrain.com/og-image.jpg',
@@ -137,7 +138,8 @@ const localBusinessSchema = {
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Cinematic Group',
+  name: 'Premiera Live',
+  legalName: 'Bahrain Nights Premiera Live',
   url: 'https://www.filmproductionbahrain.com',
   logo: 'https://www.filmproductionbahrain.com/logo-white.png',
   sameAs: [
@@ -148,6 +150,7 @@ const organizationSchema = {
   member: [
     { '@type': 'Organization', name: 'Cinematic Web Works', url: 'https://cinematicwebworks.com' },
     { '@type': 'Organization', name: 'Bahrain Nights', url: 'https://bahrainnights.com' },
+    { '@type': 'Organization', name: 'Premiera Live', url: 'https://www.premieralive.com' },
   ],
 }
 

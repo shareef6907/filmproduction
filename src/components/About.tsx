@@ -31,7 +31,7 @@ export default function About() {
             </h2>
             <div className="space-y-6 font-body text-lg text-white/70 leading-relaxed">
               <p>
-                <strong className="text-white">Bahrain Nights</strong> is a premier award-winning 
+                <strong className="text-white">Premiera Live</strong> is a premier award-winning 
                 film production company based in the heart of Manama, Bahrain. Since 2014, 
                 we've been at the forefront of visual storytelling in the Gulf region.
               </p>
