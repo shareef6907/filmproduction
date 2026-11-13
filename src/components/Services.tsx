@@ -14,6 +14,16 @@ const services = [
     ),
   },
   {
+    title: 'Film Production',
+    description: 'Scripted films, documentaries and brand films produced end to end in Bahrain.',
+    href: '/film-production-bahrain',
+    icon: (
+      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 4h16v16H4V4zm4 0v16m8-16v16M4 10h4m8 0h4M4 14h4m8 0h4" />
+      </svg>
+    ),
+  },
+  {
     title: 'Corporate Video',
     description: 'Company profiles, training videos, and internal communications that elevate your brand.',
     href: '/corporate-video-production',

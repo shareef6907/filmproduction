@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import ServicePageLayout from '@/components/ServicePageLayout'
 import VideoHero from '@/components/VideoHero'
 
@@ -51,6 +52,11 @@ const crossLinks = [
     text: 'Planning a TV commercial or brand film?',
     url: 'https://www.filmproductionbahrain.com/commercial-production',
     label: 'Commercial Production',
+  },
+  {
+    text: 'Looking for a film production company in Bahrain?',
+    url: 'https://www.filmproductionbahrain.com/film-production-bahrain',
+    label: 'Film Production Bahrain',
   },
 ]
 
@@ -133,6 +139,13 @@ export default function VideoProductionBahrain() {
           a different approach from corporate work: tighter storytelling, faster pacing, and output
           optimised for specific platforms. We produce commercials for broadcast on regional networks
           and digital-first content for Instagram, YouTube, TikTok, and LinkedIn.
+        </p>
+        <p>
+          When the brief calls for a story rather than a deliverable, our{' '}
+          <Link href="/film-production-bahrain" className="text-film-gold hover:underline">
+            film production company service in Bahrain
+          </Link>{' '}
+          covers scripted films, documentaries, and everything in between.
         </p>
 
         <h3>Event Coverage</h3>

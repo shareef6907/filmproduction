@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const servicePages = [
     'corporate-video-production',
     'video-production-bahrain',
+    'film-production-bahrain',
     'commercial-production',
     'event-videography',
     'music-video-production',
