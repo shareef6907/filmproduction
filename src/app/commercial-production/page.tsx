@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import ServicePageLayout from '@/components/ServicePageLayout'
 import VideoHero from '@/components/VideoHero'
 
@@ -120,7 +121,13 @@ export default function CommercialProduction() {
           Television remains one of the most powerful advertising mediums in the GCC. Our broadcast-quality 
           TV commercials meet the technical standards of all major networks while delivering creative 
           content that engages viewers. From 15-second spots to longer format advertisements, we produce 
-          TVCs that command attention and communicate your message effectively.
+          TVCs that command attention and communicate your message effectively. If the commercial is
+          being planned specifically for broadcast, our{' '}
+          <Link href="/tv-commercial-production" className="text-film-gold hover:underline">
+            TV commercial production
+          </Link>{' '}
+          page covers the script structures, cutdowns and delivery specifications a television spot
+          needs.
         </p>
 
         <h3>Digital and Social Media Ads</h3>
