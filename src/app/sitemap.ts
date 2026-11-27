@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'video-production-bahrain',
     'film-production-bahrain',
     'commercial-production',
+    'tv-commercial-production',
     'event-videography',
     'music-video-production',
     'real-estate-video-tours',
