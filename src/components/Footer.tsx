@@ -5,6 +5,7 @@ import Link from 'next/link'
 const services = [
   { name: 'Corporate Video', href: '/corporate-video-production' },
   { name: 'Commercial Production', href: '/commercial-production' },
+  { name: 'TV Commercials', href: '/tv-commercial-production' },
   { name: 'Event Videography', href: '/event-videography' },
   { name: 'Music Videos', href: '/music-video-production' },
   { name: 'Real Estate Tours', href: '/real-estate-video-tours' },
